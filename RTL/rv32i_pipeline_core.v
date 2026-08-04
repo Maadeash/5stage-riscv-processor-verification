@@ -5,11 +5,9 @@ module rv32i_pipeline_core(
     input rst,
     input timer_irq
 );
-
     reg [31:0] pc_f;
     reg ifid_valid;
     reg [31:0] ifid_pc, ifid_pc4, ifid_instr;
-
     reg idex_valid;
     reg [31:0] idex_pc, idex_pc4, idex_rv1, idex_rv2, idex_imm;
     reg [4:0]  idex_rs1, idex_rs2, idex_rd;
@@ -21,7 +19,6 @@ module rv32i_pipeline_core(
     reg [3:0]  idex_aluctrl;
     reg [11:0] idex_csr_addr;
     reg [31:0] idex_csr_wdata, idex_csr_read;
-
     reg exmem_valid;
     reg [31:0] exmem_pc, exmem_pc4, exmem_alu, exmem_store_data, exmem_imm;
     reg [4:0]  exmem_rd;
@@ -33,7 +30,6 @@ module rv32i_pipeline_core(
     reg [3:0]  exmem_aluctrl;
     reg [11:0] exmem_csr_addr;
     reg [31:0] exmem_csr_wdata, exmem_csr_read;
-
     reg memwb_valid;
     reg [4:0]  memwb_rd;
     reg [31:0] memwb_wdata, memwb_pc4;
@@ -41,17 +37,12 @@ module rv32i_pipeline_core(
     reg [1:0]  memwb_resultsrc, memwb_csrcmd;
     reg [11:0] memwb_csr_addr;
     reg [31:0] memwb_csr_wdata;
-
-
     wire [31:0] ex_rs1, ex_rs2;
     reg         branch_taken_r;
     wire        irq_pending;
     wire [31:0] csr_rdata, csr_mtvec, csr_mepc, csr_mcause, csr_mtval, csr_mstatus, csr_mie, csr_mip;
     wire        ex_interrupt, ex_trap;
     wire [31:0] trap_cause, trap_tval, trap_epc;
-
-
-
     wire [2:0] ImmSrcD;
     wire ALUSrcD, MemWriteD, MemReadD, BranchD, JumpD, JALRD, RegWriteD, CSRWriteD, MretD, EcallD, EbreakD, IllegalD;
     wire [1:0] ResultSrcD, CSRCmdD;
@@ -63,14 +54,12 @@ module rv32i_pipeline_core(
         .ResultSrc(ResultSrcD), .Branch(BranchD), .Jump(JumpD), .JALR(JALRD), .ALUControl(ALUControlD), .CSRCmd(CSRCmdD),
         .CSRWrite(CSRWriteD), .Mret(MretD), .Ecall(EcallD), .Ebreak(EbreakD), .Illegal(IllegalD), .Funct3(Funct3D), .Op(OpD)
     );
-
     wire [31:0] rf_rd1, rf_rd2, imm_ext;
     Register_File RF(
         .clk(clk), .rst(rst), .WE3(memwb_regwrite && (memwb_rd != 5'd0)), .A1(ifid_instr[19:15]), .A2(ifid_instr[24:20]), .A3(memwb_rd),
         .WD3(memwb_wdata), .RD1(rf_rd1), .RD2(rf_rd2)
     );
     Sign_Extend SE(.In(ifid_instr), .ImmSrc(ImmSrcD), .Imm_Ext(imm_ext));
-
     wire [1:0] fwdA, fwdB;
     Forwarding_Unit FU(
         .Rs1E(idex_rs1), .Rs2E(idex_rs2), .RdM(exmem_rd), .RdW(memwb_rd), .RegWriteM(exmem_regwrite), .RegWriteW(memwb_regwrite),
@@ -88,24 +77,10 @@ module rv32i_pipeline_core(
     assign control_target = idex_jalr ? jalr_target : jal_target;
     wire control_misaligned;
     assign control_misaligned = jump_taken ? (control_target[1:0] != 2'b00) : (branch_taken_r ? (br_target[1:0] != 2'b00) : 1'b0);
-
-
     wire [31:0] exmem_wb_value;
-
-    assign exmem_wb_value =
-       (exmem_resultsrc == `WB_PC4) ? exmem_pc4 :
-       (exmem_resultsrc == `WB_CSR) ? exmem_csr_read :
-                                     exmem_alu;
-
-    assign ex_rs1 =
-       (fwdA == 2'b10) ? exmem_wb_value :
-       (fwdA == 2'b01) ? memwb_wdata :
-                         idex_rv1;
-
-    assign ex_rs2 =
-       (fwdB == 2'b10) ? exmem_wb_value :
-       (fwdB == 2'b01) ? memwb_wdata :
-                         idex_rv2;
+    assign exmem_wb_value = (exmem_resultsrc == `WB_PC4) ? exmem_pc4 :(exmem_resultsrc == `WB_CSR) ? exmem_csr_read :exmem_alu;
+    assign ex_rs1 = (fwdA == 2'b10) ? exmem_wb_value :(fwdA == 2'b01) ? memwb_wdata :idex_rv1;
+    assign ex_rs2 =(fwdB == 2'b10) ? exmem_wb_value :(fwdB == 2'b01) ? memwb_wdata :idex_rv2;
     wire [31:0] csr_write_operand;
     assign csr_write_operand = idex_funct3[2] ? {27'd0, idex_rs1} : ex_rs1;
     wire use_pc;
@@ -136,7 +111,6 @@ module rv32i_pipeline_core(
                             ex_misaligned_load || ex_misaligned_store ? alu_res :
                             control_misaligned ? control_target : 32'd0;
     assign trap_epc = idex_pc;
-
     wire redirect_now;
     wire flush_pipeline;
 
@@ -151,10 +125,6 @@ module rv32i_pipeline_core(
         (idex_valid && (idex_jump || idex_jalr || branch_taken_r));
     wire [31:0] redirect_pc;
     assign redirect_pc = ex_trap ? csr_mtvec : (idex_mret ? csr_mepc : control_target);
-
-
-
-
     wire trap_taken;
     assign trap_taken = ex_trap;
     wire mret_taken;
@@ -167,33 +137,19 @@ module rv32i_pipeline_core(
         .timer_irq(timer_irq), .csr_rdata(csr_rdata), .mtvec(csr_mtvec), .mepc(csr_mepc), .mcause(csr_mcause), .mtval(csr_mtval),
         .mstatus(csr_mstatus), .mie(csr_mie), .mip(csr_mip), .irq_pending(irq_pending)
     );
-
-
-
-
-
-
     reg imem_active;
     reg dmem_active;
     wire im_start;
     assign im_start = (!imem_active) && (!ifid_valid) && (!dmem_active) && (!redirect_now);
     wire dmem_start;
     assign dmem_start = exmem_valid && (exmem_memread || exmem_memwrite) && (!dmem_active) && !ex_trap;
-
-
-
     wire im_done;
     assign im_done = imem_active;
     wire [31:0] im_rdata_latched;
-    Instruction_Memory IMEM(
-        .clk(clk), .rst(rst), .A(pc_f), .RD(im_rdata_latched)
-    );
-
+    Instruction_Memory IMEM(.clk(clk), .rst(rst), .A(pc_f), .RD(im_rdata_latched));
     reg [31:0] dmem_addr_q, dmem_wdata_q;
     reg [3:0] dmem_wstrb_q;
     reg dmem_write_q;
-
-
     wire dm_done;
     assign dm_done = dmem_active;
     wire [31:0] dm_rdata_latched;
@@ -202,10 +158,7 @@ module rv32i_pipeline_core(
         .WE(dmem_start && dmem_write_q), .WSTRB(dmem_wstrb_q),
         .A(dmem_addr_q), .WD(dmem_wdata_q), .RD(dm_rdata_latched)
     );
-
-
-
-
+	
     function [31:0] load_extract;
         input [31:0] word;
         input [31:0] addr;
@@ -292,19 +245,12 @@ module rv32i_pipeline_core(
         end
     end
 
-
-
     always @* begin
         dmem_addr_q  = exmem_alu & 32'hFFFFFFFC;
         dmem_wdata_q = store_align(exmem_store_data, exmem_alu, exmem_funct3);
         dmem_wstrb_q = store_strb(exmem_alu, exmem_funct3);
         dmem_write_q = exmem_memwrite;
     end
-
-
-
-
-
 
     integer i;
     wire csr_hazard;
@@ -337,32 +283,7 @@ module rv32i_pipeline_core(
             imem_active <= 1'b0; dmem_active <= 1'b0;
             memwb_wdata <= 32'd0; memwb_rd <= 5'd0; memwb_regwrite <= 1'b0; memwb_pc4 <= 32'd0; memwb_resultsrc <= `WB_ALU; memwb_csrwrite <= 1'b0; memwb_csrcmd <= `CSR_NONE; memwb_csr_addr <= 12'd0; memwb_csr_wdata <= 32'd0;
         end else begin
-
-		$display("PIPE_DBG: t=%0t ifid_v=%0b idex_v=%0b exmem_v=%0b memwb_v=%0b | idex_rd=%0d idex_rs1=%0d idex_rs2=%0d | exmem_rd=%0d exmem_rw=%0b | memwb_rd=%0d 		    memwb_rw=%0b | fwdA=%0d fwdB=%0d",$time, ifid_valid, idex_valid, exmem_valid, memwb_valid,idex_rd, idex_rs1, idex_rs2,exmem_rd, exmem_regwrite,memwb_rd,       	    	memwb_regwrite,fwdA, fwdB);
-	    if (memwb_valid) begin
-		$display("WB : rd=%0d wdata=%h resultsrc=%0d",
-         memwb_rd,
-         memwb_wdata,
-         memwb_resultsrc);
-    		$display("====================================");
-    		$display("TIME=%0t",$time);
-
-    		$display("Instruction = %h", ifid_instr);
-
-    		$display("IDEX_PC      = %h",idex_pc);
-
-    		$display("IDEX_RV1     = %h",idex_rv1);
-    		$display("IDEX_RV2     = %h",idex_rv2);
-
-    		$display("IDEX_IMM     = %h",idex_imm);
-
-    		$display("ALU_A        = %h",alu_a);
-    		$display("ALU_B        = %h",alu_b);
-
-    		$display("ALU_CTRL     = %h",idex_aluctrl);
-
-    		$display("ALU_RES      = %h",alu_res);
-	    end
+	    if (memwb_valid)
 	    memwb_valid <= 1'b0;
             if (imem_active && im_done) begin
                 if (!flush_pipeline) begin
@@ -374,15 +295,11 @@ module rv32i_pipeline_core(
                 end
                 imem_active <= 1'b0;
             end
-
-
             if (flush_pipeline) begin
     		pc_f <= redirect_pc;
     		ifid_valid <= 1'b0;
     		idex_valid <= 1'b0;
 	    end
-
-
             if (dmem_active && dm_done) begin
                 dmem_active <= 1'b0;
                 if (exmem_valid) begin
@@ -400,21 +317,12 @@ module rv32i_pipeline_core(
                     exmem_valid <= 1'b0;
                 end
             end
-
-
             if (exmem_valid && !exmem_memread && !exmem_memwrite && !dmem_active) begin
                 memwb_valid <= 1'b1;
                 memwb_rd <= exmem_rd;
-		$display("EXMEM : rd=%0d pc4=%h alu=%h resultsrc=%0d",
-         exmem_rd,
-         exmem_pc4,
-         exmem_alu,
-         exmem_resultsrc);
                 memwb_regwrite <= exmem_regwrite;
                 memwb_pc4 <= exmem_pc4;
                 memwb_resultsrc <= exmem_resultsrc;
-		$display("MEMWB_RD        = %0d", exmem_rd);
-		$display("MEMWB_RESULTSRC = %0d", exmem_resultsrc);
                 memwb_csrwrite <= exmem_csrwrite;
                 memwb_csrcmd <= exmem_csrcmd;
                 memwb_csr_addr <= exmem_csr_addr;
@@ -422,15 +330,12 @@ module rv32i_pipeline_core(
                 if (exmem_resultsrc == `WB_CSR) memwb_wdata <= exmem_csr_read;
                 else if (exmem_resultsrc == `WB_PC4) memwb_wdata <= exmem_pc4;
                 else memwb_wdata <= exmem_alu;
-		$display("MEMWB_WDATA     = %h", memwb_wdata);
                 exmem_valid <= 1'b0;
             end
-
 
             if (exmem_valid && (exmem_memread || exmem_memwrite) && !dmem_active && !redirect_now) begin
                 dmem_active <= 1'b1;
             end
-
 
             if (idex_valid && !exmem_valid && !dmem_active) begin
                 exmem_valid <= 1'b1;
@@ -440,8 +345,6 @@ module rv32i_pipeline_core(
                 exmem_store_data <= ex_rs2;
                 exmem_imm <= idex_imm;
                 exmem_rd <= idex_rd;
-		$display("EXMEM_RD        = %0d", idex_rd);
-		$display("EXMEM_RESULTSRC = %0d", idex_resultsrc);
                 exmem_funct3 <= idex_funct3;
                 exmem_op <= idex_op;
                 exmem_regwrite <= idex_regwrite && !ex_trap;
@@ -461,10 +364,8 @@ module rv32i_pipeline_core(
                 exmem_csr_addr <= idex_csr_addr;
                 exmem_csr_wdata <= csr_write_operand;
                 exmem_csr_read <= idex_csr_read;
-		$display("EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=%h", idex_csr_read);
                 idex_valid <= 1'b0;
             end
-
 
             if (ifid_valid && !idex_valid && !dmem_active && !redirect_now && !csr_hazard) begin
                 idex_valid <= 1'b1;
@@ -472,11 +373,6 @@ module rv32i_pipeline_core(
                 idex_pc4 <= ifid_pc4;
                 idex_rv1 <= rf_rd1;
                 idex_rv2 <= rf_rd2;
-		$display("========== ID/EX LOAD ==========");
-		$display("IFID_INSTR = %h", ifid_instr);
-		$display("IMM_EXT    = %h", imm_ext);
-		$display("IMM_SRC    = %b", ImmSrcD);
-		$display("OPCODE     = %h", ifid_instr[6:0]);
                 idex_imm <= imm_ext;
                 idex_rs1 <= ifid_instr[19:15];
                 idex_rs2 <= ifid_instr[24:20];
@@ -502,21 +398,15 @@ module rv32i_pipeline_core(
                 idex_csr_addr <= ifid_instr[31:20];
                 idex_csr_wdata <= (ifid_instr[14]) ? {27'd0, ifid_instr[19:15]} : rf_rd1;
                 idex_csr_read <= csr_rdata;
-		$display("IDEX_CSR_READ_CAPTURE: instr=%h csr_rdata_now=%h",
-                          ifid_instr, csr_rdata);
                 ifid_valid <= 1'b0;
             end
-
-
+			
             if (im_start && !imem_active) begin
                 imem_active <= 1'b1;
             end
 
-
             if (memwb_valid) begin
-
             end
         end
     end
-
 endmodule
