@@ -1,8 +1,6 @@
 
 `ifndef RV32I_DEFS_V
 `define RV32I_DEFS_V
-
-
 `define OPC_LUI     7'b0110111
 `define OPC_AUIPC   7'b0010111
 `define OPC_JAL     7'b1101111
@@ -14,8 +12,6 @@
 `define OPC_OP      7'b0110011
 `define OPC_MISC    7'b0001111
 `define OPC_SYSTEM  7'b1110011
-
-
 `define ALU_ADD   4'd0
 `define ALU_SUB   4'd1
 `define ALU_AND   4'd2
@@ -28,20 +24,14 @@
 `define ALU_SLL   4'd9
 `define ALU_SRL   4'd10
 `define ALU_SRA   4'd11
-
-
 `define WB_ALU   2'd0
 `define WB_MEM   2'd1
 `define WB_PC4   2'd2
 `define WB_CSR   2'd3
-
-
 `define CSR_NONE 2'd0
 `define CSR_RW   2'd1
 `define CSR_RS   2'd2
 `define CSR_RC   2'd3
-
-
 `define F3_LB    3'b000
 `define F3_LH    3'b001
 `define F3_LW    3'b010
@@ -50,16 +40,12 @@
 `define F3_SB    3'b000
 `define F3_SH    3'b001
 `define F3_SW    3'b010
-
-
 `define F3_BEQ   3'b000
 `define F3_BNE   3'b001
 `define F3_BLT   3'b100
 `define F3_BGE   3'b101
 `define F3_BLTU  3'b110
 `define F3_BGEU  3'b111
-
-
 `define F3_PRIV   3'b000
 `define F3_CSRRW  3'b001
 `define F3_CSRRS  3'b010
@@ -67,8 +53,6 @@
 `define F3_CSRRWI 3'b101
 `define F3_CSRRSI 3'b110
 `define F3_CSRRCI 3'b111
-
-
 `define CAUSE_INSN_MISALIGNED 32'd0
 `define CAUSE_INSN_ACCESS     32'd1
 `define CAUSE_ILLEGAL_INSN    32'd2
@@ -79,8 +63,6 @@
 `define CAUSE_STORE_ACCESS     32'd7
 `define CAUSE_ECALL_MMODE      32'd11
 `define CAUSE_MTI              32'h80000007
-
-
 `define CSR_MSTATUS 12'h300
 `define CSR_MISA    12'h301
 `define CSR_MIE     12'h304
@@ -89,5 +71,4 @@
 `define CSR_MCAUSE  12'h342
 `define CSR_MTVAL   12'h343
 `define CSR_MIP     12'h344
-
 `endif
