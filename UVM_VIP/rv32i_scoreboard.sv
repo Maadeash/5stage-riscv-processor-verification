@@ -9,27 +9,16 @@ class rv32i_expected_wb;
     logic [31:0] val;
     logic [31:0] pc;
     string       instr_str;
-
     function new(logic [4:0] r, logic [31:0] v, logic [31:0] p, string s = "");
         rd = r; val = v; pc = p; instr_str = s;
     endfunction
 endclass : rv32i_expected_wb
 
-
-
-
 class rv32i_scoreboard extends uvm_scoreboard;
     `uvm_component_utils(rv32i_scoreboard)
-
-
-
-
     uvm_tlm_analysis_fifo #(rv32i_obs_item) wb_fifo;
     uvm_tlm_analysis_fifo #(rv32i_obs_item) mem_fifo;
     uvm_tlm_analysis_fifo #(rv32i_obs_item) trap_fifo;
-
-
-
 
     logic [31:0] rf  [0:31];
     logic [31:0] csr_mstatus;
@@ -40,20 +29,11 @@ class rv32i_scoreboard extends uvm_scoreboard;
     logic [31:0] csr_mie;
     logic [31:0] csr_mip;
     logic [31:0] dmem [0:255];
-
-
-
-
     int unsigned pass_count;
     int unsigned fail_count;
     int unsigned wb_checked;
     int unsigned mem_checked;
     int unsigned trap_checked;
-
-
-
-
-
     rv32i_expected_wb exp_wb_q[$];
 
     function new(string name = "rv32i_scoreboard", uvm_component parent = null);
@@ -67,10 +47,7 @@ class rv32i_scoreboard extends uvm_scoreboard;
         trap_fifo = new("trap_fifo", this);
         reset_model();
     endfunction
-
-
-
-
+    
     function void reset_model();
         for (int i = 0; i < 32; i++) rf[i] = 32'd0;
         csr_mstatus = 32'd0; csr_mtvec  = 32'd0;
@@ -81,37 +58,26 @@ class rv32i_scoreboard extends uvm_scoreboard;
         exp_wb_q.delete();
     endfunction
 
-
-
-
     task run_phase(uvm_phase phase);
         rv32i_obs_item obs;
         fork
-
             forever begin
                 wb_fifo.get(obs);
                 check_wb(obs);
             end
-
             forever begin
                 mem_fifo.get(obs);
                 check_mem(obs);
             end
-
             forever begin
                 trap_fifo.get(obs);
                 check_trap(obs);
             end
         join
     endtask
-
-
-
-
+    
     task check_wb(rv32i_obs_item obs);
         wb_checked++;
-
-
         if (obs.rd_wb == 5'd0) begin
             if (obs.rd_val_wb !== 32'd0) begin
                 `uvm_error("SB_WB", $sformatf("x0 written non-zero! got=0x%08h", obs.rd_val_wb))
@@ -119,11 +85,8 @@ class rv32i_scoreboard extends uvm_scoreboard;
             end
             return;
         end
-
-
         if (exp_wb_q.size() > 0) begin
             rv32i_expected_wb exp = exp_wb_q.pop_front();
-
             if (obs.rd_wb !== exp.rd) begin
                 `uvm_error("SB_WB", $sformatf("[cyc=%0d] RD mismatch: DUT=x%0d, EXP=x%0d (%s)",
                             obs.cycle, obs.rd_wb, exp.rd, exp.instr_str))
@@ -140,32 +103,25 @@ class rv32i_scoreboard extends uvm_scoreboard;
                 rf[obs.rd_wb] = obs.rd_val_wb;
             end
         end else begin
-
             `uvm_info("SB_WB", $sformatf("[cyc=%0d] UNMATCHED WB: x%0d=0x%08h (no exp queued)",
                        obs.cycle, obs.rd_wb, obs.rd_val_wb), UVM_HIGH)
             rf[obs.rd_wb] = obs.rd_val_wb;
         end
     endtask
-
-
-
-
+    
     task check_mem(rv32i_obs_item obs);
         mem_checked++;
         if (obs.mem_write) begin
-
             if (obs.mem_funct3 == 3'b010 && obs.mem_addr[1:0] !== 2'b00) begin
                 `uvm_error("SB_MEM", $sformatf("SW to misaligned addr=0x%08h", obs.mem_addr))
                 fail_count++;
                 return;
             end
-
             if (obs.mem_funct3 == 3'b001 && obs.mem_addr[0] !== 1'b0) begin
                 `uvm_error("SB_MEM", $sformatf("SH to misaligned addr=0x%08h", obs.mem_addr))
                 fail_count++;
                 return;
             end
-
             update_shadow_mem(obs.mem_addr, obs.mem_wdata, obs.mem_funct3);
             `uvm_info("SB_MEM", $sformatf("Store f3=%03b addr=0x%08h data=0x%08h — PASS",
                        obs.mem_funct3, obs.mem_addr, obs.mem_wdata), UVM_HIGH)
@@ -173,13 +129,9 @@ class rv32i_scoreboard extends uvm_scoreboard;
         end
     endtask
 
-
-
-
     task check_trap(rv32i_obs_item obs);
         trap_checked++;
         `uvm_info("SB_TRAP", $sformatf("Trap detected: cause=0x%08h", obs.trap_cause_obs), UVM_MEDIUM)
-
         case (obs.trap_cause_obs)
             CAUSE_INSN_MISALIGNED,
             CAUSE_ILLEGAL_INSN,
@@ -196,10 +148,7 @@ class rv32i_scoreboard extends uvm_scoreboard;
             end
         endcase
     endtask
-
-
-
-
+    
     function void update_shadow_mem(logic [31:0] addr, logic [31:0] wdata, logic [2:0] f3);
         int wi = addr[9:2];
         case (f3)
@@ -218,10 +167,7 @@ class rv32i_scoreboard extends uvm_scoreboard;
             default: dmem[wi] = wdata;
         endcase
     endfunction
-
-
-
-
+    
     function automatic logic [31:0] ref_alu(
         input logic [31:0] a, b,
         input logic [3:0]  ctrl
@@ -243,31 +189,21 @@ class rv32i_scoreboard extends uvm_scoreboard;
         endcase
     endfunction
 
-
-
-
     function void expect_wb(logic [4:0] rd, logic [31:0] val, logic [31:0] pc, string s = "");
         rv32i_expected_wb e = new(rd, val, pc, s);
         exp_wb_q.push_back(e);
     endfunction
 
-
-
-
     function void report_phase(uvm_phase phase);
         super.report_phase(phase);
-        `uvm_info("SB", "============================================", UVM_NONE)
         `uvm_info("SB", $sformatf("WB  checks: %0d", wb_checked),     UVM_NONE)
         `uvm_info("SB", $sformatf("MEM checks: %0d", mem_checked),    UVM_NONE)
         `uvm_info("SB", $sformatf("TRP checks: %0d", trap_checked),   UVM_NONE)
         `uvm_info("SB", $sformatf("PASS: %0d  FAIL: %0d", pass_count, fail_count), UVM_NONE)
         if (fail_count == 0)
-            `uvm_info("SB", "*** ALL CHECKS PASSED ***", UVM_NONE)
+            `uvm_info("SB", "ALL CHECKS PASSED", UVM_NONE)
         else
-            `uvm_error("SB", $sformatf("*** %0d FAILURES DETECTED ***", fail_count))
-        `uvm_info("SB", "============================================", UVM_NONE)
+            `uvm_error("SB", $sformatf("%0d FAILURES DETECTED", fail_count))
     endfunction
-
 endclass : rv32i_scoreboard
-
 `endif
