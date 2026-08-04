@@ -5,12 +5,7 @@ import re
 import subprocess
 import sys
 
-TESTS = [
-    "smoke", "alu", "branch", "jump", "forwarding", "hazard",
-    "loadstore", "csr", "trap", "irq", "reset", "misalign", "random",
-    "covclose", "memcover",
-]
-
+TESTS = ["smoke", "alu", "branch", "jump", "forwarding", "hazard","loadstore", "csr", "trap", "irq", "reset", "misalign", "random","covclose", "memcover",]
 FILELIST = "filelist.f"
 CM_DIR = "simv.vdb"          
 LOG_DIR = "logs"
