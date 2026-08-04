@@ -10,10 +10,9 @@ module Data_Memory #(
     output reg [31:0] RD
 );
     localparam MEM_WORDS = 256;
-
     reg [31:0] ram [0:MEM_WORDS-1];
-
     integer i;
+    
     initial begin
         for (i = 0; i < MEM_WORDS; i = i + 1)
             ram[i] = 32'd0;
