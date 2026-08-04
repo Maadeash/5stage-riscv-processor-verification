@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 module Data_Memory #(
     parameter INIT_FILE = ""
 )(
