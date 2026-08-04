@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Assertions</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Assertions</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<br clear=all>
+<div class="ui-layout-west">
+<b>Assertions by Category</b><table class="noborder">
+<col width="180">
+<col span="3" width="60"><tr class="sortablehead"><td> </td><td>ASSERT</td><td>PROPERTIES</td><td>SEQUENCES</td>
+<tr class="wht"><td class="lf">Total</td><td>83</td><td>0</td><td>0</td></tr>
+<tr class="wht"><td class="lf">Category 0</td><td>83</td><td>0</td><td>0</td></tr>
+</table>
+<hr>
+<br clear=all>
+<b>Assertions by Severity</b><table class="noborder">
+<col width="180">
+<col span="3" width="60"><tr class="sortablehead"><td> </td><td>ASSERT</td><td>PROPERTIES</td><td>SEQUENCES</td>
+<tr class="wht"><td class="lf">Total</td><td>83</td><td>0</td><td>0</td></tr>
+<tr class="wht"><td class="lf">Severity 0</td><td>83</td><td>0</td><td>0</td></tr>
+</table>
+<hr>
+<br clear=all>
+<b>Summary for Assertions</b><table class="noborder">
+<col width="180">
+<col span="2" width="60"><tr class="sortablehead"><td> </td><td>NUMBER</td><td>PERCENT</td>
+<tr class="wht"><td class="lf">Total Number</td><td>83</td><td>100.00</td></tr>
+<tr class="wht"><td class="lf"><a href="#tag_ast_no_covr">Uncovered</a></td><td>45</td><td>54.22</td></tr>
+<tr class="wht"><td class="lf"><a href="#tag_ast_succ">Success</a></td><td>38</td><td>45.78</td></tr>
+<tr class="wht"><td class="lf">Failure</td><td>0</td><td>0.00</td></tr>
+<tr class="wht"><td class="lf"><a href="#tag_ast_incp">Incomplete</a></td><td>2</td><td>2.41</td></tr>
+<tr class="wht"><td class="lf"><a href="#tag_ast_no_attp">Without Attempts</a></td><td>42</td><td>50.60</td></tr>
+</table>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<hr>
+<br clear=all>
+<b>Detail Report for Assertions</b><br clear=all>
+<br clear=all>
+Assertions Uncovered:<a name="tag_ast_no_covr"></a>
+<table class="sortable rt">
+<col width="180">
+<col span="6" width="60"><tr class="sortablehead">
+<td class="alfsrt">ASSERTIONS<td>CATEGORY</td><td>SEVERITY</td><td>ATTEMPTS</td><td>REAL SUCCESSES</td><td>FAILURES</td><td>INCOMPLETE</td><td>SRC</td>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A10_FWDA_MEM_EX" title="mod12.html#1906840106" href="mod12.html#1906840106">Pipeline_top.core.u_assert.A10_FWDA_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A11_FWDB_EX_EX" title="mod12.html#1075824814" href="mod12.html#1075824814">Pipeline_top.core.u_assert.A11_FWDB_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A12_FWDB_MEM_EX" title="mod12.html#158726955" href="mod12.html#158726955">Pipeline_top.core.u_assert.A12_FWDB_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0" title="mod12.html#994600292" href="mod12.html#994600292">Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A14_LOAD_USE_STALL" title="mod12.html#2029499345" href="mod12.html#2029499345">Pipeline_top.core.u_assert.A14_LOAD_USE_STALL</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A15_JUMP_REDIRECT" title="mod12.html#1167555410" href="mod12.html#1167555410">Pipeline_top.core.u_assert.A15_JUMP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A16_JALR_LSB" title="mod12.html#1975355511" href="mod12.html#1975355511">Pipeline_top.core.u_assert.A16_JALR_LSB</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A17_PC_PLUS4" title="mod12.html#1896674571" href="mod12.html#1896674571">Pipeline_top.core.u_assert.A17_PC_PLUS4</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A18_PC_REDIRECT" title="mod12.html#983630068" href="mod12.html#983630068">Pipeline_top.core.u_assert.A18_PC_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A19_ECALL_TRAP" title="mod12.html#1747122876" href="mod12.html#1747122876">Pipeline_top.core.u_assert.A19_ECALL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A1_RESET_PC" title="mod12.html#987085395" href="mod12.html#987085395">Pipeline_top.core.u_assert.A1_RESET_PC</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A20_EBREAK_TRAP" title="mod12.html#1872250989" href="mod12.html#1872250989">Pipeline_top.core.u_assert.A20_EBREAK_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP" title="mod12.html#960664198" href="mod12.html#960664198">Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A22_TRAP_REDIRECT" title="mod12.html#1740600885" href="mod12.html#1740600885">Pipeline_top.core.u_assert.A22_TRAP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A23_TRAP_TARGET" title="mod12.html#1352902593" href="mod12.html#1352902593">Pipeline_top.core.u_assert.A23_TRAP_TARGET</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A24_MRET_TARGET" title="mod12.html#2036771771" href="mod12.html#2036771771">Pipeline_top.core.u_assert.A24_MRET_TARGET</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID" title="mod12.html#792341108" href="mod12.html#792341108">Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A26_LW_ALIGNED" title="mod12.html#185587119" href="mod12.html#185587119">Pipeline_top.core.u_assert.A26_LW_ALIGNED</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A27_SW_STROBE" title="mod12.html#1758867422" href="mod12.html#1758867422">Pipeline_top.core.u_assert.A27_SW_STROBE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM" title="mod12.html#696794339" href="mod12.html#696794339">Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A29_WB_X0_GUARD" title="mod12.html#1784357462" href="mod12.html#1784357462">Pipeline_top.core.u_assert.A29_WB_X0_GUARD</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A2_RESET_VALID" title="mod12.html#171057725" href="mod12.html#171057725">Pipeline_top.core.u_assert.A2_RESET_VALID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A30_WB_PC4" title="mod12.html#107491309" href="mod12.html#107491309">Pipeline_top.core.u_assert.A30_WB_PC4</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A31_CSR_WRITE" title="mod12.html#813049955" href="mod12.html#813049955">Pipeline_top.core.u_assert.A31_CSR_WRITE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A32_TRAP_MEPC" title="mod12.html#1864858713" href="mod12.html#1864858713">Pipeline_top.core.u_assert.A32_TRAP_MEPC</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A33_TRAP_MIE" title="mod12.html#1494288486" href="mod12.html#1494288486">Pipeline_top.core.u_assert.A33_TRAP_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A34_MRET_MIE" title="mod12.html#2116809632" href="mod12.html#2116809632">Pipeline_top.core.u_assert.A34_MRET_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A35_IRQ_MIE" title="mod12.html#2034676431" href="mod12.html#2034676431">Pipeline_top.core.u_assert.A35_IRQ_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A36_IRQ_SOURCE" title="mod12.html#724024302" href="mod12.html#724024302">Pipeline_top.core.u_assert.A36_IRQ_SOURCE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A37_EXMEM_DMEM" title="mod12.html#1913500397" href="mod12.html#1913500397">Pipeline_top.core.u_assert.A37_EXMEM_DMEM</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE" title="mod12.html#279809123" href="mod12.html#279809123">Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A39_NOP_NO_WRITE" title="mod12.html#1018857458" href="mod12.html#1018857458">Pipeline_top.core.u_assert.A39_NOP_NO_WRITE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A3_X0_IMMUTABLE" title="mod12.html#759160355" href="mod12.html#759160355">Pipeline_top.core.u_assert.A3_X0_IMMUTABLE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A40_BRANCH_ALIGN" title="mod12.html#1788373167" href="mod12.html#1788373167">Pipeline_top.core.u_assert.A40_BRANCH_ALIGN</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A4_IFID_RST" title="mod12.html#1865956659" href="mod12.html#1865956659">Pipeline_top.core.u_assert.A4_IFID_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A5_IDEX_RST" title="mod12.html#2027129336" href="mod12.html#2027129336">Pipeline_top.core.u_assert.A5_IDEX_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A6_EXMEM_RST" title="mod12.html#2097762543" href="mod12.html#2097762543">Pipeline_top.core.u_assert.A6_EXMEM_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH" title="mod12.html#1724981915" href="mod12.html#1724981915">Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID" title="mod12.html#1766076991" href="mod12.html#1766076991">Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A9_FWDA_EX_EX" title="mod12.html#932800848" href="mod12.html#932800848">Pipeline_top.core.u_assert.A9_FWDA_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A14_LOAD_USE_STALL" title="mod12.html#175176051" href="mod12.html#175176051">tb_top.dut.u_assert.A14_LOAD_USE_STALL</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A36_IRQ_SOURCE" title="mod12.html#313841674" href="mod12.html#313841674">tb_top.dut.u_assert.A36_IRQ_SOURCE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A38_PIPELINE_ADVANCE" title="mod12.html#869082919" href="mod12.html#869082919">tb_top.dut.u_assert.A38_PIPELINE_ADVANCE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1" title="mod7.html#117826508" href="mod7.html#117826508">uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh" href="javascript:void(0);" onclick="openSrcFile('/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1" title="mod7.html#686230363" href="mod7.html#686230363">uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh" href="javascript:void(0);" onclick="openSrcFile('/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh')"><img class="sourcefile"></a>
+</td></tr>
+</table>
+<br clear=all>
+Assertions Success:<a name="tag_ast_succ"></a>
+<table class="sortable rt">
+<col width="180">
+<col span="6" width="60"><tr class="sortablehead">
+<td class="alfsrt">ASSERTIONS<td>CATEGORY</td><td>SEVERITY</td><td>ATTEMPTS</td><td>REAL SUCCESSES</td><td>FAILURES</td><td>INCOMPLETE</td><td>SRC</td>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A10_FWDA_MEM_EX" title="mod12.html#1198333242" href="mod12.html#1198333242">tb_top.dut.u_assert.A10_FWDA_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">33</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A11_FWDB_EX_EX" title="mod12.html#1976306890" href="mod12.html#1976306890">tb_top.dut.u_assert.A11_FWDB_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">62</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A12_FWDB_MEM_EX" title="mod12.html#1036459175" href="mod12.html#1036459175">tb_top.dut.u_assert.A12_FWDB_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">23</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A13_NO_FWD_FROM_X0" title="mod12.html#937406200" href="mod12.html#937406200">tb_top.dut.u_assert.A13_NO_FWD_FROM_X0</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">96</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A15_JUMP_REDIRECT" title="mod12.html#435767498" href="mod12.html#435767498">tb_top.dut.u_assert.A15_JUMP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">4</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A16_JALR_LSB" title="mod12.html#384464059" href="mod12.html#384464059">tb_top.dut.u_assert.A16_JALR_LSB</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">1</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A17_PC_PLUS4" title="mod12.html#838753585" href="mod12.html#838753585">tb_top.dut.u_assert.A17_PC_PLUS4</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">330</td><td>0</td><td>3</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A18_PC_REDIRECT" title="mod12.html#11537048" href="mod12.html#11537048">tb_top.dut.u_assert.A18_PC_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">31</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A19_ECALL_TRAP" title="mod12.html#1131599080" href="mod12.html#1131599080">tb_top.dut.u_assert.A19_ECALL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">3</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A1_RESET_PC" title="mod12.html#1936292073" href="mod12.html#1936292073">tb_top.dut.u_assert.A1_RESET_PC</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">18</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A20_EBREAK_TRAP" title="mod12.html#355605591" href="mod12.html#355605591">tb_top.dut.u_assert.A20_EBREAK_TRAP</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">1</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A21_ILLEGAL_TRAP" title="mod12.html#1776421982" href="mod12.html#1776421982">tb_top.dut.u_assert.A21_ILLEGAL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">1</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A22_TRAP_REDIRECT" title="mod12.html#913602375" href="mod12.html#913602375">tb_top.dut.u_assert.A22_TRAP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">17</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A23_TRAP_TARGET" title="mod12.html#1312199555" href="mod12.html#1312199555">tb_top.dut.u_assert.A23_TRAP_TARGET</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">17</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A24_MRET_TARGET" title="mod12.html#120671031" href="mod12.html#120671031">tb_top.dut.u_assert.A24_MRET_TARGET</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">5</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A25_DMEM_NEEDS_VALID" title="mod12.html#536779728" href="mod12.html#536779728">tb_top.dut.u_assert.A25_DMEM_NEEDS_VALID</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">30</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A26_LW_ALIGNED" title="mod12.html#1606888717" href="mod12.html#1606888717">tb_top.dut.u_assert.A26_LW_ALIGNED</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">8</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A27_SW_STROBE" title="mod12.html#1893614086" href="mod12.html#1893614086">tb_top.dut.u_assert.A27_SW_STROBE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">12</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A28_NO_IMEM_DURING_DMEM" title="mod12.html#1044006823" href="mod12.html#1044006823">tb_top.dut.u_assert.A28_NO_IMEM_DURING_DMEM</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">30</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A29_WB_X0_GUARD" title="mod12.html#1572821362" href="mod12.html#1572821362">tb_top.dut.u_assert.A29_WB_X0_GUARD</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">294</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A2_RESET_VALID" title="mod12.html#1634816889" href="mod12.html#1634816889">tb_top.dut.u_assert.A2_RESET_VALID</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">470</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A30_WB_PC4" title="mod12.html#674211031" href="mod12.html#674211031">tb_top.dut.u_assert.A30_WB_PC4</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">4</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A31_CSR_WRITE" title="mod12.html#10599641" href="mod12.html#10599641">tb_top.dut.u_assert.A31_CSR_WRITE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">26</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A32_TRAP_MEPC" title="mod12.html#57031147" href="mod12.html#57031147">tb_top.dut.u_assert.A32_TRAP_MEPC</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">17</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A33_TRAP_MIE" title="mod12.html#790262398" href="mod12.html#790262398">tb_top.dut.u_assert.A33_TRAP_MIE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">17</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A34_MRET_MIE" title="mod12.html#642608188" href="mod12.html#642608188">tb_top.dut.u_assert.A34_MRET_MIE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">5</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A35_IRQ_MIE" title="mod12.html#1972425709" href="mod12.html#1972425709">tb_top.dut.u_assert.A35_IRQ_MIE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">1</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A37_EXMEM_DMEM" title="mod12.html#403662449" href="mod12.html#403662449">tb_top.dut.u_assert.A37_EXMEM_DMEM</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">30</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A39_NOP_NO_WRITE" title="mod12.html#1529079694" href="mod12.html#1529079694">tb_top.dut.u_assert.A39_NOP_NO_WRITE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">118</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A3_X0_IMMUTABLE" title="mod12.html#1496586399" href="mod12.html#1496586399">tb_top.dut.u_assert.A3_X0_IMMUTABLE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">284</td><td>0</td><td>8</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A40_BRANCH_ALIGN" title="mod12.html#711850509" href="mod12.html#711850509">tb_top.dut.u_assert.A40_BRANCH_ALIGN</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">6</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A4_IFID_RST" title="mod12.html#146187695" href="mod12.html#146187695">tb_top.dut.u_assert.A4_IFID_RST</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">470</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A5_IDEX_RST" title="mod12.html#104085276" href="mod12.html#104085276">tb_top.dut.u_assert.A5_IDEX_RST</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">470</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A6_EXMEM_RST" title="mod12.html#1987263979" href="mod12.html#1987263979">tb_top.dut.u_assert.A6_EXMEM_RST</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">470</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A7_REDIRECT_FLUSH" title="mod12.html#553865633" href="mod12.html#553865633">tb_top.dut.u_assert.A7_REDIRECT_FLUSH</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">31</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A8_IDEX_FROM_IFID" title="mod12.html#907655877" href="mod12.html#907655877">tb_top.dut.u_assert.A8_IDEX_FROM_IFID</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">320</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A9_FWDA_EX_EX" title="mod12.html#1899160788" href="mod12.html#1899160788">tb_top.dut.u_assert.A9_FWDA_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">63</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0" title="mod7.html#1469058985" href="mod7.html#1469058985">uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0</a>
+</td><td>0</td><td>0</td><td class="s9">765</td><td class="s9">765</td><td>0</td><td>0</td><td class="ct"><a title="/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_traversal.svh" href="javascript:void(0);" onclick="openSrcFile('/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_traversal.svh')"><img class="sourcefile"></a>
+</td></tr>
+</table>
+<br clear=all>
+Assertions Incomplete:<a name="tag_ast_incp"></a>
+<table class="sortable rt">
+<col width="180">
+<col span="6" width="60"><tr class="sortablehead">
+<td class="alfsrt">ASSERTIONS<td>CATEGORY</td><td>SEVERITY</td><td>ATTEMPTS</td><td>REAL SUCCESSES</td><td>FAILURES</td><td>INCOMPLETE</td><td>SRC</td>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A17_PC_PLUS4" title="mod12.html#838753585" href="mod12.html#838753585">tb_top.dut.u_assert.A17_PC_PLUS4</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">330</td><td>0</td><td>3</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_tb_top.dut.u_assert.A3_X0_IMMUTABLE" title="mod12.html#1496586399" href="mod12.html#1496586399">tb_top.dut.u_assert.A3_X0_IMMUTABLE</a>
+</td><td>0</td><td>0</td><td class="s9">1554</td><td class="s9">284</td><td>0</td><td>8</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+</table>
+<br clear=all>
+Assertions Without Attempts:<a name="tag_ast_no_attp"></a>
+<table class="sortable rt">
+<col width="180">
+<col span="6" width="60"><tr class="sortablehead">
+<td class="alfsrt">ASSERTIONS<td>CATEGORY</td><td>SEVERITY</td><td>ATTEMPTS</td><td>REAL SUCCESSES</td><td>FAILURES</td><td>INCOMPLETE</td><td>SRC</td>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A10_FWDA_MEM_EX" title="mod12.html#1906840106" href="mod12.html#1906840106">Pipeline_top.core.u_assert.A10_FWDA_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A11_FWDB_EX_EX" title="mod12.html#1075824814" href="mod12.html#1075824814">Pipeline_top.core.u_assert.A11_FWDB_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A12_FWDB_MEM_EX" title="mod12.html#158726955" href="mod12.html#158726955">Pipeline_top.core.u_assert.A12_FWDB_MEM_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0" title="mod12.html#994600292" href="mod12.html#994600292">Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A14_LOAD_USE_STALL" title="mod12.html#2029499345" href="mod12.html#2029499345">Pipeline_top.core.u_assert.A14_LOAD_USE_STALL</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A15_JUMP_REDIRECT" title="mod12.html#1167555410" href="mod12.html#1167555410">Pipeline_top.core.u_assert.A15_JUMP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A16_JALR_LSB" title="mod12.html#1975355511" href="mod12.html#1975355511">Pipeline_top.core.u_assert.A16_JALR_LSB</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A17_PC_PLUS4" title="mod12.html#1896674571" href="mod12.html#1896674571">Pipeline_top.core.u_assert.A17_PC_PLUS4</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A18_PC_REDIRECT" title="mod12.html#983630068" href="mod12.html#983630068">Pipeline_top.core.u_assert.A18_PC_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A19_ECALL_TRAP" title="mod12.html#1747122876" href="mod12.html#1747122876">Pipeline_top.core.u_assert.A19_ECALL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A1_RESET_PC" title="mod12.html#987085395" href="mod12.html#987085395">Pipeline_top.core.u_assert.A1_RESET_PC</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A20_EBREAK_TRAP" title="mod12.html#1872250989" href="mod12.html#1872250989">Pipeline_top.core.u_assert.A20_EBREAK_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP" title="mod12.html#960664198" href="mod12.html#960664198">Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A22_TRAP_REDIRECT" title="mod12.html#1740600885" href="mod12.html#1740600885">Pipeline_top.core.u_assert.A22_TRAP_REDIRECT</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A23_TRAP_TARGET" title="mod12.html#1352902593" href="mod12.html#1352902593">Pipeline_top.core.u_assert.A23_TRAP_TARGET</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A24_MRET_TARGET" title="mod12.html#2036771771" href="mod12.html#2036771771">Pipeline_top.core.u_assert.A24_MRET_TARGET</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID" title="mod12.html#792341108" href="mod12.html#792341108">Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A26_LW_ALIGNED" title="mod12.html#185587119" href="mod12.html#185587119">Pipeline_top.core.u_assert.A26_LW_ALIGNED</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A27_SW_STROBE" title="mod12.html#1758867422" href="mod12.html#1758867422">Pipeline_top.core.u_assert.A27_SW_STROBE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM" title="mod12.html#696794339" href="mod12.html#696794339">Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A29_WB_X0_GUARD" title="mod12.html#1784357462" href="mod12.html#1784357462">Pipeline_top.core.u_assert.A29_WB_X0_GUARD</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A2_RESET_VALID" title="mod12.html#171057725" href="mod12.html#171057725">Pipeline_top.core.u_assert.A2_RESET_VALID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A30_WB_PC4" title="mod12.html#107491309" href="mod12.html#107491309">Pipeline_top.core.u_assert.A30_WB_PC4</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A31_CSR_WRITE" title="mod12.html#813049955" href="mod12.html#813049955">Pipeline_top.core.u_assert.A31_CSR_WRITE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A32_TRAP_MEPC" title="mod12.html#1864858713" href="mod12.html#1864858713">Pipeline_top.core.u_assert.A32_TRAP_MEPC</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A33_TRAP_MIE" title="mod12.html#1494288486" href="mod12.html#1494288486">Pipeline_top.core.u_assert.A33_TRAP_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A34_MRET_MIE" title="mod12.html#2116809632" href="mod12.html#2116809632">Pipeline_top.core.u_assert.A34_MRET_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A35_IRQ_MIE" title="mod12.html#2034676431" href="mod12.html#2034676431">Pipeline_top.core.u_assert.A35_IRQ_MIE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A36_IRQ_SOURCE" title="mod12.html#724024302" href="mod12.html#724024302">Pipeline_top.core.u_assert.A36_IRQ_SOURCE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A37_EXMEM_DMEM" title="mod12.html#1913500397" href="mod12.html#1913500397">Pipeline_top.core.u_assert.A37_EXMEM_DMEM</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE" title="mod12.html#279809123" href="mod12.html#279809123">Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A39_NOP_NO_WRITE" title="mod12.html#1018857458" href="mod12.html#1018857458">Pipeline_top.core.u_assert.A39_NOP_NO_WRITE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A3_X0_IMMUTABLE" title="mod12.html#759160355" href="mod12.html#759160355">Pipeline_top.core.u_assert.A3_X0_IMMUTABLE</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A40_BRANCH_ALIGN" title="mod12.html#1788373167" href="mod12.html#1788373167">Pipeline_top.core.u_assert.A40_BRANCH_ALIGN</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A4_IFID_RST" title="mod12.html#1865956659" href="mod12.html#1865956659">Pipeline_top.core.u_assert.A4_IFID_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A5_IDEX_RST" title="mod12.html#2027129336" href="mod12.html#2027129336">Pipeline_top.core.u_assert.A5_IDEX_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A6_EXMEM_RST" title="mod12.html#2097762543" href="mod12.html#2097762543">Pipeline_top.core.u_assert.A6_EXMEM_RST</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH" title="mod12.html#1724981915" href="mod12.html#1724981915">Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID" title="mod12.html#1766076991" href="mod12.html#1766076991">Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_Pipeline_top.core.u_assert.A9_FWDA_EX_EX" title="mod12.html#932800848" href="mod12.html#932800848">Pipeline_top.core.u_assert.A9_FWDA_EX_EX</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv" href="javascript:void(0);" onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1" title="mod7.html#117826508" href="mod7.html#117826508">uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh" href="javascript:void(0);" onclick="openSrcFile('/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh')"><img class="sourcefile"></a>
+</td></tr>
+<tr class="wht"><td class="lf"><a name="tag_hvp_ast_uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1" title="mod7.html#686230363" href="mod7.html#686230363">uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1</a>
+</td><td>0</td><td>0</td><td class="s3">0</td><td class="s3">0</td><td>0</td><td>0</td><td class="ct"><a title="/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh" href="javascript:void(0);" onclick="openSrcFile('/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/reg/uvm_reg_map.svh')"><img class="sourcefile"></a>
+</td></tr>
+</table>
+<br clear=all>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul>
+    <li>
+      <a href="#tag_ast_no_covr">Assertions Uncovered</a>    </li>
+    <li>
+      <a href="#tag_ast_succ">Assertions Success</a>    </li>
+    <li>
+      <a href="#tag_ast_incp">Assertions Incomplete</a>    </li>
+    <li>
+      <a href="#tag_ast_no_attp">Assertions Without Attempts</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

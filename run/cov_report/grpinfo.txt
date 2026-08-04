@@ -1,0 +1,1022 @@
+Group : rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 11       0         11      100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_aluctrl 11       0         11      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_aluctrl
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 11       0         11      100.00  
+
+
+User Defined Bins for cp_aluctrl
+
+
+Excluded/Illegal bins
+
+NAME  COUNT STATUS   
+COPYA 0     Excluded 
+
+
+Covered bins
+
+NAME  COUNT AT LEAST 
+SRA   6     1        
+SRL   24    1        
+SLL   6     1        
+PASSB 12    1        
+SLTU  8     1        
+SLT   6     1        
+XOR   6     1        
+OR    6     1        
+AND   6     1        
+SUB   51    1        
+ADD   878   1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_wb_src
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_wb_src
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_wb_src
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_wb_src
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_wb_src 4        0         4       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_wb_src
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_wb_src
+
+
+Bins
+
+NAME COUNT AT LEAST 
+CSR  83    1        
+PC4  12    1        
+MEM  65    1        
+ALU  646   1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_opcode
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_opcode
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_opcode
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 11       0         11      100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_opcode
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_opcode 11       0         11      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_opcode
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 11       0         11      100.00  
+
+
+User Defined Bins for cp_opcode
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+SYSTEM 123   1        
+MISC   6     1        
+OP     78    1        
+OPIMM  564   1        
+STORE  53    1        
+LOAD   108   1        
+BRANCH 42    1        
+JALR   4     1        
+JAL    12    1        
+AUIPC  18    1        
+LUI    12    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_csr_ops
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_csr_ops
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_csr_ops
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 1        0         1       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_csr_ops
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_csrcmd 1        0         1       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_csrcmd
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 1        0         1       100.00  
+
+
+User Defined Bins for cp_csrcmd
+
+
+Bins
+
+NAME COUNT AT LEAST 
+RW   83    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_branch
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_branch
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_branch
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+Crosses   12       0         12      100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_branch
+
+
+VARIABLE         EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_branch_funct3 6        0         6       100.00  100  1      1        0                    
+cp_branch_taken  2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  rv32i_tb_pkg::rv32i_coverage::cg_branch
+
+
+CROSS     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_branch 12       0         12      100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_branch_funct3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 6        0         6       100.00  
+
+
+User Defined Bins for cp_branch_funct3
+
+
+Bins
+
+NAME COUNT AT LEAST 
+BGEU 7     1        
+BLTU 7     1        
+BGE  7     1        
+BLT  7     1        
+BNE  7     1        
+BEQ  7     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_branch_taken
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_branch_taken
+
+
+Bins
+
+NAME      COUNT AT LEAST 
+NOT_TAKEN 1063  1        
+TAKEN     6     1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_branch
+
+
+Samples crossed: cp_branch_funct3 cp_branch_taken
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 12       0         12      100.00          
+
+
+Automatically Generated Cross Bins for cx_branch
+
+
+Bins
+
+cp_branch_funct3 cp_branch_taken COUNT AT LEAST 
+BGEU             NOT_TAKEN       6     1        
+BGEU             TAKEN           1     1        
+BLTU             NOT_TAKEN       6     1        
+BLTU             TAKEN           1     1        
+BGE              NOT_TAKEN       6     1        
+BGE              TAKEN           1     1        
+BLT              NOT_TAKEN       6     1        
+BLT              TAKEN           1     1        
+BNE              NOT_TAKEN       6     1        
+BNE              TAKEN           1     1        
+BEQ              NOT_TAKEN       6     1        
+BEQ              TAKEN           1     1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_rtype_f3 8        0         8       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rtype_f3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_rtype_f3
+
+
+Bins
+
+NAME    COUNT AT LEAST 
+AND     3     1        
+OR      3     1        
+SRL_SRA 6     1        
+XOR     3     1        
+SLTU    3     1        
+SLT     3     1        
+SLL     3     1        
+ADD_SUB 54    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_control_flow
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_control_flow
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_control_flow
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+Crosses   4        0         4       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_control_flow
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_jal      2        0         2       100.00  100  1      1        0                    
+cp_redirect 2        0         2       100.00  100  1      1        0                    
+
+
+Crosses for Group  rv32i_tb_pkg::rv32i_coverage::cg_control_flow
+
+
+CROSS            EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_jump_redirect 4        0         4       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_jal
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_jal
+
+
+Bins
+
+NAME COUNT AT LEAST 
+JALR 4     1        
+JAL  12    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_redirect
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_redirect
+
+
+Bins
+
+NAME        COUNT AT LEAST 
+NO_REDIRECT 1038  1        
+REDIRECT    31    1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_jump_redirect
+
+
+Samples crossed: cp_jal cp_redirect
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+Automatically Generated Cross Bins 4        0         4       100.00          
+
+
+Automatically Generated Cross Bins for cx_jump_redirect
+
+
+Bins
+
+cp_jal cp_redirect COUNT AT LEAST 
+JALR   NO_REDIRECT 3     1        
+JALR   REDIRECT    1     1        
+JAL    NO_REDIRECT 9     1        
+JAL    REDIRECT    3     1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 8        0         8       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_itype_f3 8        0         8       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_itype_f3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 8        0         8       100.00  
+
+
+User Defined Bins for cp_itype_f3
+
+
+Bins
+
+NAME  COUNT AT LEAST 
+SRI   24    1        
+SLLI  3     1        
+ANDI  3     1        
+ORI   3     1        
+XORI  3     1        
+SLTIU 5     1        
+SLTI  3     1        
+ADDI  520   1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_load_width
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_load_width
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_load_width
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 5        0         5       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_load_width
+
+
+VARIABLE   EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_load_f3 5        0         5       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_load_f3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 5        0         5       100.00  
+
+
+User Defined Bins for cp_load_f3
+
+
+Bins
+
+NAME COUNT AT LEAST 
+LHU  12    1        
+LBU  24    1        
+LW   52    1        
+LH   8     1        
+LB   12    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_forwarding
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_forwarding
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_forwarding
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 6        0         6       100.00  
+Crosses   8        0         8       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_forwarding
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_fwdA  3        0         3       100.00  100  1      1        0                    
+cp_fwdB  3        0         3       100.00  100  1      1        0                    
+
+
+Crosses for Group  rv32i_tb_pkg::rv32i_coverage::cg_forwarding
+
+
+CROSS  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST PRINT MISSING COMMENT 
+cx_fwd 8        0         8       100.00  100  1      1        0                     
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_fwdA
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_fwdA
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+MEM_EX 33    1        
+EX_EX  63    1        
+NO_FWD 973   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_fwdB
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_fwdB
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+MEM_EX 23    1        
+EX_EX  62    1        
+NO_FWD 984   1        
+
+
+-------------------------------------------------------------------------------
+
+Summary for Cross cx_fwd
+
+
+Samples crossed: cp_fwdA cp_fwdB
+CATEGORY                           EXPECTED UNCOVERED COVERED PERCENT MISSING 
+TOTAL                              8        0         8       100.00          
+Automatically Generated Cross Bins 8        0         8       100.00          
+User Defined Cross Bins            0        0         0                       
+
+
+Automatically Generated Cross Bins for cx_fwd
+
+
+Bins
+
+cp_fwdA cp_fwdB COUNT AT LEAST 
+MEM_EX  MEM_EX  2     1        
+MEM_EX  EX_EX   1     1        
+MEM_EX  NO_FWD  30    1        
+EX_EX   EX_EX   2     1        
+EX_EX   NO_FWD  61    1        
+NO_FWD  MEM_EX  21    1        
+NO_FWD  EX_EX   59    1        
+NO_FWD  NO_FWD  893   1        
+
+
+User Defined Cross Bins for cx_fwd
+
+
+Excluded/Illegal bins
+
+NAME               COUNT STATUS   
+unreachable_ex_mem 0     Excluded 
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 2        0         2       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid
+
+
+VARIABLE  EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_ifid_v 2        0         2       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_ifid_v
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 2        0         2       100.00  
+
+
+User Defined Bins for cp_ifid_v
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+NORMAL 1052  1        
+TRAP   17    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 4        0         4       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment
+
+
+VARIABLE     EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_byte_lane 4        0         4       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_byte_lane
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 4        0         4       100.00  
+
+
+User Defined Bins for cp_byte_lane
+
+
+Bins
+
+NAME   COUNT AT LEAST 
+LANE_3 4     1        
+LANE_2 8     1        
+LANE_1 8     1        
+LANE_0 27    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_trap_cause
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_trap_cause
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_trap_cause
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 7        0         7       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_trap_cause
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_cause 7        0         7       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_cause
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 7        0         7       100.00  
+
+
+User Defined Bins for cp_cause
+
+
+Bins
+
+NAME             COUNT AT LEAST 
+MTI              1     1        
+ECALL_MMODE      3     1        
+STORE_MISALIGNED 1     1        
+LOAD_MISALIGNED  9     1        
+BREAKPOINT       1     1        
+ILLEGAL_INSN     1     1        
+INSN_MISALIGNED  1     1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_store_width
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_store_width
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_store_width
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 3        0         3       100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_store_width
+
+
+VARIABLE    EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_store_f3 3        0         3       100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_store_f3
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 3        0         3       100.00  
+
+
+User Defined Bins for cp_store_f3
+
+
+Bins
+
+NAME COUNT AT LEAST 
+SW   20    1        
+SH   4     1        
+SB   29    1        
+
+
+Group : rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses
+
+===============================================================================
+Group : rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses
+===============================================================================
+SCORE  WEIGHT GOAL   AT LEAST AUTO BIN MAX PRINT MISSING 
+100.00 1      100    1        64           64            
+
+
+Source File(s) : 
+
+/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_coverage.sv
+
+
+
+-------------------------------------------------------------------------------
+
+Summary for Group   rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses
+
+
+
+CATEGORY  EXPECTED UNCOVERED COVERED PERCENT 
+Variables 32       0         32      100.00  
+
+
+Variables for Group  rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses
+
+
+VARIABLE EXPECTED UNCOVERED COVERED PERCENT GOAL WEIGHT AT LEAST AUTO BIN MAX COMMENT 
+cp_rd_wb 32       0         32      100.00  100  1      1        0                    
+
+
+-------------------------------------------------------------------------------
+
+Summary for Variable cp_rd_wb
+
+
+CATEGORY          EXPECTED UNCOVERED COVERED PERCENT 
+User Defined Bins 32       0         32      100.00  
+
+
+User Defined Bins for cp_rd_wb
+
+
+Bins
+
+NAME    COUNT AT LEAST 
+regs_03 56    1        
+regs_04 31    1        
+regs_05 35    1        
+regs_06 27    1        
+regs_07 24    1        
+regs_08 22    1        
+regs_09 16    1        
+regs_0a 20    1        
+regs_0b 12    1        
+regs_0c 3     1        
+regs_0d 3     1        
+regs_0e 3     1        
+regs_0f 3     1        
+regs_10 6     1        
+regs_11 3     1        
+regs_12 6     1        
+regs_13 6     1        
+regs_14 9     1        
+regs_15 3     1        
+regs_16 9     1        
+regs_17 8     1        
+regs_18 6     1        
+regs_19 6     1        
+regs_1a 6     1        
+regs_1b 6     1        
+regs_1c 6     1        
+regs_1d 6     1        
+regs_1e 3     1        
+regs_1f 18    1        
+SP      65    1        
+RA      85    1        
+ZERO    294   1        
+
+

@@ -1,0 +1,24 @@
+================================================================================
+RV32I UVM Regression Report
+================================================================================
+2026-07-25 05:45:10.211278
+
+rv32i_smoke_test            PASS       3.9s   Scoreboard PASS=7 (Coverage save crash ignored)
+rv32i_alu_test              PASS       3.4s   Scoreboard PASS=23 (Coverage save crash ignored)
+rv32i_branch_test           PASS       3.0s   Scoreboard PASS=4 (Coverage save crash ignored)
+rv32i_jump_test             PASS       3.1s   Scoreboard PASS=4 (Coverage save crash ignored)
+rv32i_forwarding_test       PASS       3.1s   Scoreboard PASS=6 (Coverage save crash ignored)
+rv32i_hazard_test           PASS       3.6s   Scoreboard PASS=6 (Coverage save crash ignored)
+rv32i_loadstore_test        PASS       3.1s   Scoreboard PASS=8 (Coverage save crash ignored)
+rv32i_csr_test              PASS       3.1s   Scoreboard PASS=5 (Coverage save crash ignored)
+rv32i_trap_test             PASS       3.2s   Scoreboard PASS=10 (Coverage save crash ignored)
+rv32i_irq_test              PASS       3.1s   Scoreboard PASS=0 (Coverage save crash ignored)
+rv32i_reset_test            PASS       3.1s   Scoreboard PASS=2 (Coverage save crash ignored)
+rv32i_misalign_test         PASS       3.4s   Scoreboard PASS=4 (Coverage save crash ignored)
+rv32i_random_test           PASS       3.1s   Scoreboard PASS=5 (Coverage save crash ignored)
+
+================================================================================
+Total Tests : 13
+Passed      : 13
+Failed      : 0
+Pass Rate   : 100.00%

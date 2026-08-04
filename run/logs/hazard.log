@@ -1,0 +1,1389 @@
+Command: /home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/./simv +UVM_TESTNAME=rv32i_hazard_test -cm line+cond+tgl+fsm+branch+assert -cm_name hazard -cm_dir simv.vdb -l logs/hazard.log
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP2-1_Full64; Runtime version X-2025.06-SP2-1_Full64;  Aug  4 08:05 2026
+UVM_INFO /synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_root.svh(407) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test rv32i_hazard_test...
+UVM_INFO /synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_root.svh(594) @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               rv32i_hazard_test           -     @348 
+  env                      rv32i_env                   -     @361 
+    agent                  rv32i_agent                 -     @370 
+      ap_all               uvm_analysis_port           -     @613 
+      ap_mem               uvm_analysis_port           -     @593 
+      ap_trap              uvm_analysis_port           -     @603 
+      ap_wb                uvm_analysis_port           -     @583 
+      driver               rv32i_driver                -     @545 
+        rsp_port           uvm_analysis_port           -     @564 
+        seq_item_port      uvm_seq_item_pull_port      -     @554 
+      monitor              rv32i_monitor               -     @574 
+        ap_all             uvm_analysis_port           -     @654 
+        ap_mem             uvm_analysis_port           -     @634 
+        ap_trap            uvm_analysis_port           -     @644 
+        ap_wb              uvm_analysis_port           -     @624 
+      sequencer            rv32i_sequencer             -     @408 
+        rsp_export         uvm_analysis_export         -     @417 
+        seq_item_export    uvm_seq_item_pull_imp       -     @535 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    coverage               rv32i_coverage              -     @388 
+      analysis_imp         uvm_analysis_imp            -     @397 
+    scoreboard             rv32i_scoreboard            -     @379 
+      mem_fifo             uvm_tlm_analysis_fifo #(T)  -     @729 
+        analysis_export    uvm_analysis_imp            -     @778 
+        get_ap             uvm_analysis_port           -     @768 
+        get_peek_export    uvm_get_peek_imp            -     @748 
+        put_ap             uvm_analysis_port           -     @758 
+        put_export         uvm_put_imp                 -     @738 
+      trap_fifo            uvm_tlm_analysis_fifo #(T)  -     @788 
+        analysis_export    uvm_analysis_imp            -     @837 
+        get_ap             uvm_analysis_port           -     @827 
+        get_peek_export    uvm_get_peek_imp            -     @807 
+        put_ap             uvm_analysis_port           -     @817 
+        put_export         uvm_put_imp                 -     @797 
+      wb_fifo              uvm_tlm_analysis_fifo #(T)  -     @670 
+        analysis_export    uvm_analysis_imp            -     @719 
+        get_ap             uvm_analysis_port           -     @709 
+        get_peek_export    uvm_get_peek_imp            -     @689 
+        put_ap             uvm_analysis_port           -     @699 
+        put_export         uvm_put_imp                 -     @679 
+------------------------------------------------------------------
+
+UVM_INFO ../UVM_VIP/rv32i_sequence_lib.sv(631) @ 0: uvm_test_top.env.agent.sequencer@@seq [seq] === Load-Use Stall Sequence START ===
+PIPE_DBG: t=5 ifid_v=x idex_v=x exmem_v=x memwb_v=x | idex_rd=x idex_rs1=x idex_rs2=x | exmem_rd=x exmem_rw=x | memwb_rd=x 		    memwb_rw=x | fwdA=x fwdB=x
+
+========== CSR WRITE ==========
+TIME=5
+csr_we    = x
+csr_cmd   = x
+csr_addr  = xxx
+csr_raddr = xxx
+csr_wdata = xxxxxxxx
+OLD VALUE = 00000000
+
+========== CSR WRITE ==========
+TIME=6
+csr_we    = 0
+csr_cmd   = x
+csr_addr  = xxx
+csr_raddr = xxx
+csr_wdata = xxxxxxxx
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=6
+PC          = xxxxxxxx
+IFID_VALID  = x
+IFID_INSTR  = xxxxxxxx
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = x
+WB_DATA     = xxxxxxxx
+redirect    = x
+flush       = x
+
+========== CSR READ ==========
+TIME=6
+csr_raddr = 000
+csr_rdata = 00000000
+FWD_DBG: t=6 Rs1E=x Rs2E=x RdM=x RdW=0 RWM=x RWW=0 MRM=x -> A=0 B=0
+
+========== PIPE ==========
+TIME=15
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=15
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=25
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=25
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=35
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=35
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=45
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=45
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=55
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=55
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=65
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=65
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=75
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=75
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(77) @ 75: uvm_test_top.env.agent.driver [DRV] Reset asserted
+
+========== PIPE ==========
+TIME=85
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=85
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=95
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=95
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=105
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=105
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=115
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=115
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=125
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=125
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(77) @ 125: uvm_test_top.env.agent.driver [DRV] Reset asserted
+
+========== PIPE ==========
+TIME=135
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=135
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=145
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=145
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=155
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=155
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=165
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=165
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=175
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=175
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(77) @ 175: uvm_test_top.env.agent.driver [DRV] Reset asserted
+
+========== PIPE ==========
+TIME=185
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=185
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=195
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=195
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=205
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=205
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=215
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=215
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=225
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=225
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(77) @ 225: uvm_test_top.env.agent.driver [DRV] Reset asserted
+
+========== PIPE ==========
+TIME=235
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=235
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=245
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=245
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=255
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=255
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=265
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=265
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== PIPE ==========
+TIME=275
+PC          = 00000000
+IFID_VALID  = 0
+IFID_INSTR  = 00000000
+IDEX_PC     = xxxxxxxx
+EXMEM_RD    = x
+MEMWB_RD    = 0
+WB_DATA     = 00000000
+redirect    = 0
+flush       = 0
+
+========== CSR WRITE ==========
+TIME=275
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(77) @ 275: uvm_test_top.env.agent.driver [DRV] Reset asserted
+UVM_INFO ../UVM_VIP/rv32i_sequence_lib.sv(252) @ 275: uvm_test_top.env.agent.sequencer@@seq [seq] Reset sequence complete
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 275: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[0] = 02a00093
+PIPE_DBG: t=285 ifid_v=0 idex_v=0 exmem_v=0 memwb_v=0 | idex_rd=x idex_rs1=x idex_rs2=x | exmem_rd=x exmem_rw=x | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+
+========== CSR WRITE ==========
+TIME=285
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 285: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[1] = 00102023
+PIPE_DBG: t=295 ifid_v=0 idex_v=0 exmem_v=0 memwb_v=0 | idex_rd=x idex_rs1=x idex_rs2=x | exmem_rd=x exmem_rw=x | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+
+========== CSR WRITE ==========
+TIME=295
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== CSR READ ==========
+TIME=295
+csr_raddr = 02a
+csr_rdata = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 295: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[2] = 00002103
+PIPE_DBG: t=305 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=0 | idex_rd=x idex_rs1=x idex_rs2=x | exmem_rd=x exmem_rw=x | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+========== ID/EX LOAD ==========
+IFID_INSTR = 02a00093
+IMM_EXT    = 0000002a
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=02a00093 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=305
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 02a
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=305 Rs1E=0 Rs2E=10 RdM=x RdW=0 RWM=x RWW=0 MRM=x -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 305: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[3] = 000101b3
+PIPE_DBG: t=315 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=1 idex_rs1=0 idex_rs2=10 | exmem_rd=x exmem_rw=x | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+EXMEM_RD        = 1
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=315
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 02a
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=315 Rs1E=0 Rs2E=10 RdM=1 RdW=0 RWM=1 RWW=0 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 315: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[4] = 00210233
+PIPE_DBG: t=325 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=1 idex_rs1=0 idex_rs2=10 | exmem_rd=1 exmem_rw=1 | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+EXMEM : rd=1 pc4=00000004 alu=0000002a resultsrc=0
+MEMWB_RD        = 1
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 00000000
+
+========== CSR WRITE ==========
+TIME=325
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 02a
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== CSR READ ==========
+TIME=325
+csr_raddr = 001
+csr_rdata = 00000000
+FWD_DBG: t=325 Rs1E=0 Rs2E=10 RdM=1 RdW=1 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 325: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[5] = 00000013
+PIPE_DBG: t=335 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=1 idex_rs1=0 idex_rs2=10 | exmem_rd=1 exmem_rw=1 | memwb_rd=1 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=1 wdata=0000002a resultsrc=0
+====================================
+TIME=335
+Instruction = 00102023
+IDEX_PC      = 00000000
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 0000002a
+ALU_A        = 00000000
+ALU_B        = 0000002a
+ALU_CTRL     = 0
+ALU_RES      = 0000002a
+========== ID/EX LOAD ==========
+IFID_INSTR = 00102023
+IMM_EXT    = 00000000
+IMM_SRC    = 001
+OPCODE     = 23
+IDEX_CSR_READ_CAPTURE: instr=00102023 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=335
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 02a
+csr_raddr = 001
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=335 Rs1E=0 Rs2E=1 RdM=1 RdW=1 RWM=1 RWW=1 MRM=0 -> A=0 B=2
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(154) @ 335: uvm_test_top.env.scoreboard [SB_WB] [cyc=34] PASS: x1=0x0000002a (ADDI x1=42)
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 335: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[6] = 00000013
+PIPE_DBG: t=345 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=1 | exmem_rd=1 exmem_rw=1 | memwb_rd=1 		    memwb_rw=1 | fwdA=0 fwdB=2
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=345
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 02a
+csr_raddr = 001
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=345 Rs1E=0 Rs2E=1 RdM=0 RdW=1 RWM=0 RWW=1 MRM=0 -> A=0 B=1
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 345: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[7] = 00000013
+PIPE_DBG: t=355 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=1 | exmem_rd=0 exmem_rw=0 | memwb_rd=1 		    memwb_rw=1 | fwdA=0 fwdB=1
+
+========== CSR WRITE ==========
+TIME=355
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 02a
+csr_raddr = 001
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== CSR READ ==========
+TIME=355
+csr_raddr = 000
+csr_rdata = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 355: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=365 ifid_v=1 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=1 | exmem_rd=0 exmem_rw=0 | memwb_rd=1 		    memwb_rw=1 | fwdA=0 fwdB=1
+
+========== CSR WRITE ==========
+TIME=365
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 02a
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=365 Rs1E=0 Rs2E=1 RdM=0 RdW=0 RWM=0 RWW=0 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 365: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=375 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=0 idex_rs1=0 idex_rs2=1 | exmem_rd=0 exmem_rw=0 | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+WB : rd=0 wdata=00000000 resultsrc=0
+====================================
+TIME=375
+Instruction = 00002103
+IDEX_PC      = 00000004
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00002103
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 03
+IDEX_CSR_READ_CAPTURE: instr=00002103 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=375
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 001
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=375 Rs1E=0 Rs2E=0 RdM=0 RdW=0 RWM=0 RWW=0 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 375: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=385 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=2 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=0 | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+EXMEM_RD        = 2
+EXMEM_RESULTSRC = 1
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=385
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 001
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=385 Rs1E=0 Rs2E=0 RdM=2 RdW=0 RWM=1 RWW=0 MRM=1 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 385: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=395 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=2 idex_rs1=0 idex_rs2=0 | exmem_rd=2 exmem_rw=1 | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+
+========== CSR WRITE ==========
+TIME=395
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 001
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 395: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=405 ifid_v=1 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=2 idex_rs1=0 idex_rs2=0 | exmem_rd=2 exmem_rw=1 | memwb_rd=0 		    memwb_rw=0 | fwdA=0 fwdB=0
+
+========== CSR WRITE ==========
+TIME=405
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 001
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=405 Rs1E=0 Rs2E=0 RdM=2 RdW=2 RWM=1 RWW=1 MRM=1 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 405: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=415 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=2 idex_rs1=0 idex_rs2=0 | exmem_rd=2 exmem_rw=1 | memwb_rd=2 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=2 wdata=0000002a resultsrc=1
+====================================
+TIME=415
+Instruction = 000101b3
+IDEX_PC      = 00000008
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 000101b3
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 33
+IDEX_CSR_READ_CAPTURE: instr=000101b3 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=415
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=415 Rs1E=2 Rs2E=0 RdM=2 RdW=2 RWM=1 RWW=1 MRM=1 -> A=1 B=0
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(154) @ 415: uvm_test_top.env.scoreboard [SB_WB] [cyc=42] PASS: x2=0x0000002a (LW x2=42)
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 415: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=425 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=3 idex_rs1=2 idex_rs2=0 | exmem_rd=2 exmem_rw=1 | memwb_rd=2 		    memwb_rw=1 | fwdA=1 fwdB=0
+EXMEM_RD        = 3
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=425
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+FWD_DBG: t=425 Rs1E=2 Rs2E=0 RdM=3 RdW=2 RWM=1 RWW=1 MRM=0 -> A=1 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 425: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=435 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=3 idex_rs1=2 idex_rs2=0 | exmem_rd=3 exmem_rw=1 | memwb_rd=2 		    memwb_rw=1 | fwdA=1 fwdB=0
+EXMEM : rd=3 pc4=00000010 alu=0000002a resultsrc=0
+MEMWB_RD        = 3
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 0000002a
+
+========== CSR WRITE ==========
+TIME=435
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+
+========== CSR READ ==========
+TIME=435
+csr_raddr = 002
+csr_rdata = 00000000
+FWD_DBG: t=435 Rs1E=2 Rs2E=0 RdM=3 RdW=3 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 435: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=445 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=3 idex_rs1=2 idex_rs2=0 | exmem_rd=3 exmem_rw=1 | memwb_rd=3 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=3 wdata=0000002a resultsrc=0
+====================================
+TIME=445
+Instruction = 00210233
+IDEX_PC      = 0000000c
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00210233
+IMM_EXT    = 00000002
+IMM_SRC    = 000
+OPCODE     = 33
+IDEX_CSR_READ_CAPTURE: instr=00210233 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=445
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 002
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+FWD_DBG: t=445 Rs1E=2 Rs2E=2 RdM=3 RdW=3 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(154) @ 445: uvm_test_top.env.scoreboard [SB_WB] [cyc=45] PASS: x3=0x0000002a (ADD x3=42 (stall))
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 445: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=455 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=4 idex_rs1=2 idex_rs2=2 | exmem_rd=3 exmem_rw=1 | memwb_rd=3 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 4
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=455
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 002
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+FWD_DBG: t=455 Rs1E=2 Rs2E=2 RdM=4 RdW=3 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 455: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=465 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=4 idex_rs1=2 idex_rs2=2 | exmem_rd=4 exmem_rw=1 | memwb_rd=3 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM : rd=4 pc4=00000014 alu=00000054 resultsrc=0
+MEMWB_RD        = 4
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 0000002a
+
+========== CSR WRITE ==========
+TIME=465
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 002
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+
+========== CSR READ ==========
+TIME=465
+csr_raddr = 000
+csr_rdata = 00000000
+FWD_DBG: t=465 Rs1E=2 Rs2E=2 RdM=4 RdW=4 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 465: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=475 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=4 idex_rs1=2 idex_rs2=2 | exmem_rd=4 exmem_rw=1 | memwb_rd=4 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=4 wdata=00000054 resultsrc=0
+====================================
+TIME=475
+Instruction = 00000013
+IDEX_PC      = 00000010
+IDEX_RV1     = 0000002a
+IDEX_RV2     = 0000002a
+IDEX_IMM     = 00000002
+ALU_A        = 0000002a
+ALU_B        = 0000002a
+ALU_CTRL     = 0
+ALU_RES      = 00000054
+========== ID/EX LOAD ==========
+IFID_INSTR = 00000013
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=00000013 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=475
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 002
+csr_raddr = 000
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+FWD_DBG: t=475 Rs1E=0 Rs2E=0 RdM=4 RdW=4 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(154) @ 475: uvm_test_top.env.scoreboard [SB_WB] [cyc=48] PASS: x4=0x00000054 (ADD x4=84)
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 475: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=485 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=4 exmem_rw=1 | memwb_rd=4 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=485
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 002
+csr_raddr = 000
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+FWD_DBG: t=485 Rs1E=0 Rs2E=0 RdM=0 RdW=4 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 485: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=495 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=4 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM : rd=0 pc4=00000018 alu=00000000 resultsrc=0
+MEMWB_RD        = 0
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 00000054
+
+========== CSR WRITE ==========
+TIME=495
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 002
+csr_raddr = 000
+csr_wdata = 0000002a
+OLD VALUE = 00000000
+FWD_DBG: t=495 Rs1E=0 Rs2E=0 RdM=0 RdW=0 RWM=1 RWW=1 MRM=0 -> A=0 B=0
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 495: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=505 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=0 wdata=00000000 resultsrc=0
+====================================
+TIME=505
+Instruction = 00000013
+IDEX_PC      = 00000014
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00000013
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=00000013 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=505
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 505: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=515 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=515
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 515: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=525 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM : rd=0 pc4=0000001c alu=00000000 resultsrc=0
+MEMWB_RD        = 0
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 00000000
+
+========== CSR WRITE ==========
+TIME=525
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 525: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=535 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=0 wdata=00000000 resultsrc=0
+====================================
+TIME=535
+Instruction = 00000013
+IDEX_PC      = 00000018
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00000013
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=00000013 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=535
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 535: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=545 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=545
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 545: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=555 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM : rd=0 pc4=00000020 alu=00000000 resultsrc=0
+MEMWB_RD        = 0
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 00000000
+
+========== CSR WRITE ==========
+TIME=555
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 555: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=565 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=0 wdata=00000000 resultsrc=0
+====================================
+TIME=565
+Instruction = 00000013
+IDEX_PC      = 0000001c
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00000013
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=00000013 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=565
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 565: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=575 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=575
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 575: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=585 ifid_v=0 idex_v=0 exmem_v=1 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM : rd=0 pc4=00000024 alu=00000000 resultsrc=0
+MEMWB_RD        = 0
+MEMWB_RESULTSRC = 0
+MEMWB_WDATA     = 00000000
+
+========== CSR WRITE ==========
+TIME=585
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 585: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=595 ifid_v=1 idex_v=0 exmem_v=0 memwb_v=1 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+WB : rd=0 wdata=00000000 resultsrc=0
+====================================
+TIME=595
+Instruction = 00000013
+IDEX_PC      = 00000020
+IDEX_RV1     = 00000000
+IDEX_RV2     = 00000000
+IDEX_IMM     = 00000000
+ALU_A        = 00000000
+ALU_B        = 00000000
+ALU_CTRL     = 0
+ALU_RES      = 00000000
+========== ID/EX LOAD ==========
+IFID_INSTR = 00000013
+IMM_EXT    = 00000000
+IMM_SRC    = 000
+OPCODE     = 13
+IDEX_CSR_READ_CAPTURE: instr=00000013 csr_rdata_now=00000000
+
+========== CSR WRITE ==========
+TIME=595
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_driver.sv(83) @ 595: uvm_test_top.env.agent.driver [DRV_LOAD] Loading IMEM[63] = 00000013
+PIPE_DBG: t=605 ifid_v=0 idex_v=1 exmem_v=0 memwb_v=0 | idex_rd=0 idex_rs1=0 idex_rs2=0 | exmem_rd=0 exmem_rw=1 | memwb_rd=0 		    memwb_rw=1 | fwdA=0 fwdB=0
+EXMEM_RD        = 0
+EXMEM_RESULTSRC = 0
+EXMEM_CSR_READ_CAPTURE: idex_csr_read_now=00000000
+
+========== CSR WRITE ==========
+TIME=605
+csr_we    = 0
+csr_cmd   = 0
+csr_addr  = 000
+csr_raddr = 000
+csr_wdata = 00000000
+OLD VALUE = 00000000
+UVM_INFO ../UVM_VIP/rv32i_sequence_lib.sv(643) @ 605: uvm_test_top.env.agent.sequencer@@seq [seq] === Load-Use Stall Sequence DONE ===
+UVM_INFO /synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 605: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(314) @ 605: uvm_test_top.env.coverage [COV] ============= COVERAGE SUMMARY =============
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(315) @ 605: uvm_test_top.env.coverage [COV] Opcode        : 36.4%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(316) @ 605: uvm_test_top.env.coverage [COV] ALU Control   : 9.1%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(317) @ 605: uvm_test_top.env.coverage [COV] Branch×Taken  : 16.7%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(318) @ 605: uvm_test_top.env.coverage [COV] Forwarding    : 72.2%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(319) @ 605: uvm_test_top.env.coverage [COV] WB Source     : 50.0%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(320) @ 605: uvm_test_top.env.coverage [COV] Trap Cause    : 0.0%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(321) @ 605: uvm_test_top.env.coverage [COV] Load Width    : 20.0%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(322) @ 605: uvm_test_top.env.coverage [COV] Store Width   : 33.3%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(323) @ 605: uvm_test_top.env.coverage [COV] Mem Alignment : 25.0%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(324) @ 605: uvm_test_top.env.coverage [COV] Reg Addresses : 15.6%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(325) @ 605: uvm_test_top.env.coverage [COV] R-type f3     : 12.5%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(326) @ 605: uvm_test_top.env.coverage [COV] I-type f3     : 12.5%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(327) @ 605: uvm_test_top.env.coverage [COV] Control Flow  : 16.7%
+UVM_INFO ../UVM_VIP/rv32i_coverage.sv(328) @ 605: uvm_test_top.env.coverage [COV] ============================================
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(277) @ 605: uvm_test_top.env.scoreboard [SB] ============================================
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(278) @ 605: uvm_test_top.env.scoreboard [SB] WB  checks: 4
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(279) @ 605: uvm_test_top.env.scoreboard [SB] MEM checks: 4
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(280) @ 605: uvm_test_top.env.scoreboard [SB] TRP checks: 0
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(281) @ 605: uvm_test_top.env.scoreboard [SB] PASS: 6  FAIL: 0
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(283) @ 605: uvm_test_top.env.scoreboard [SB] *** ALL CHECKS PASSED ***
+UVM_INFO ../UVM_VIP/rv32i_scoreboard.sv(286) @ 605: uvm_test_top.env.scoreboard [SB] ============================================
+UVM_INFO /synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_report_catcher.svh(705) @ 605: reporter [UVM/REPORT/CATCHER] 
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+UVM_INFO /synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_report_server.svh(904) @ 605: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   72
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[COV]    15
+[DRV]     5
+[DRV_LOAD]    33
+[RNTST]     1
+[SB]     7
+[SB_WB]     4
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+[UVM/REPORT/CATCHER]     1
+[UVMTOP]     1
+[seq]     3
+
+$finish called from file "/synopsys/tools/vcs/vcs/X-2025.06-SP2-1/vcs/X-2025.06-SP2-1/etc/uvm-1.2/base/uvm_root.svh", line 532.
+$finish at simulation time                  605
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 605
+CPU Time:      0.380 seconds;       Data structure size:   0.8Mb
+Tue Aug  4 08:05:45 2026

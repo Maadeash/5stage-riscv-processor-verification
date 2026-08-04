@@ -1,0 +1,26 @@
+Testbench Group List
+
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+100.00 1      
+
+
+Total groups in report: 15
+-------------------------------------------------------------------------------
+SCORE  WEIGHT GOAL   AT LEAST PER INSTANCE AUTO BIN MAX PRINT MISSING COMMENT NAME                                            
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl       
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_wb_src         
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_opcode         
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_csr_ops        
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_branch         
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3   
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_control_flow   
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3   
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_load_width     
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_forwarding     
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid 
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment  
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_trap_cause     
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_store_width    
+100.00 1      100    1        0            64           64                    rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses  
+

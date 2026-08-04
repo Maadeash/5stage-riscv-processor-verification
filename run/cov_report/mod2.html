@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: ALU_Decoder</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_ALU_Decoder'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_ALU_Decoder')">ALU_Decoder</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 93.99</td>
+<td class="s9 cl rt"><a href="mod2.html#Line" > 91.67</a></td>
+<td class="s9 cl rt"><a href="mod2.html#Cond" > 92.31</a></td>
+<td class="s10 cl rt"><a href="mod2.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod2.html#Branch" > 92.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../RTL/ALU_Decoder.v')">/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../RTL/ALU_Decoder.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod2.html#inst_tag_4"  onclick="showContent('inst_tag_4')">Pipeline_top.core.CU.u_alu</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Line" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Branch" >  0.00</a></td>
+<td class="wht cl rt"></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod2.html#inst_tag_5"  onclick="showContent('inst_tag_5')">tb_top.dut.CU.u_alu</a></td>
+<td class="s9 cl rt"> 93.99</td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Line" > 91.67</a></td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Cond" > 92.31</a></td>
+<td class="s10 cl rt"><a href="mod2.html#inst_tag_5_Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Branch" > 92.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_4'>
+<hr>
+<a name="inst_tag_4"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_4" >Pipeline_top.core.CU.u_alu</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Line" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Cond" >  0.00</a></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod2.html#inst_tag_4_Branch" >  0.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  0.66</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  2.65</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td><a href="mod0.html#inst_tag_0" >CU</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_5'>
+<hr>
+<a name="inst_tag_5"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_5" >tb_top.dut.CU.u_alu</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 93.99</td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Line" > 91.67</a></td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Cond" > 92.31</a></td>
+<td class="s10 cl rt"><a href="mod2.html#inst_tag_5_Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod2.html#inst_tag_5_Branch" > 92.00</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 93.99</td>
+<td class="s9 cl rt"> 91.67</td>
+<td class="s9 cl rt"> 92.31</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 92.00</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 90.78</td>
+<td class="s8 cl rt"> 85.71</td>
+<td class="s9 cl rt"> 96.46</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s8 cl rt"> 80.95</td>
+<td class="wht cl rt"></td>
+<td><a href="mod0.html#inst_tag_1" >CU</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_ALU_Decoder'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod2.html" >ALU_Decoder</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>24</td><td>22</td><td>91.67</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>11</td><td>24</td><td>22</td><td>91.67</td></tr>
+</table>
+<pre class="code"><br clear=all>
+10                          always @* begin
+11         1/1                  case (ALUOp)
+12         1/1                      2'b00: ALUControl = `ALU_ADD;
+13         1/1                      2'b01: ALUControl = `ALU_SUB;
+14                                  2'b10: begin
+15         1/1                          case (funct3)
+16         1/1                              3'b000: ALUControl = (funct7[5] &amp;&amp; op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;
+17         1/1                              3'b111: ALUControl = `ALU_AND;
+18         1/1                              3'b110: ALUControl = `ALU_OR;
+19         1/1                              3'b100: ALUControl = `ALU_XOR;
+20         1/1                              3'b010: ALUControl = `ALU_SLT;
+21         1/1                              3'b011: ALUControl = `ALU_SLTU;
+22         1/1                              3'b001: ALUControl = `ALU_SLL;
+23         1/1                              3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+24         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+25                                      endcase
+26                                  end
+27                                  2'b11: begin
+28         1/1                          case (funct3)
+29         1/1                              3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;
+30         1/1                              3'b111: ALUControl = `ALU_AND;
+31         1/1                              3'b110: ALUControl = `ALU_OR;
+32         1/1                              3'b100: ALUControl = `ALU_XOR;
+33         1/1                              3'b010: ALUControl = `ALU_SLT;
+34         1/1                              3'b011: ALUControl = `ALU_SLTU;
+35         1/1                              3'b001: ALUControl = `ALU_SLL;
+36         1/1                              3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+37         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+38                                      endcase
+39                                  end
+40         1/1                      default: ALUControl = `ALU_ADD;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod2.html" >ALU_Decoder</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>13</td><td>12</td><td>92.31</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>13</td><td>12</td><td>92.31</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ EXPRESSION ((funct7[5] &amp;&amp; (op == 7'b0110011)) ? 4'b1 : 4'b0)
+             ----------------1----------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (funct7[5] &amp;&amp; (op == 7'b0110011))
+                 ----1----    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (op == 7'b0110011)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       23
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       29
+ EXPRESSION (funct7[5] ? 4'b1 : 4'b0)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       36
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod2.html" >ALU_Decoder</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Totals</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Total Bits</td>
+<td class="rt">46</td>
+<td class="rt">46</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">46</td>
+<td class="rt">46</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>ALUOp[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct3[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct7[6:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op[6:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ALUControl[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod2.html" >ALU_Decoder</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">25</td>
+<td class="rt">23</td>
+<td class="rt">92.00 </td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">11</td>
+<td class="rt">25</td>
+<td class="rt">23</td>
+<td class="rt">92.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+11                 case (ALUOp)
+                   <font color = "green">-1-</font>  
+12                     2'b00: ALUControl = `ALU_ADD;
+           <font color = "green">            ==></font>
+13                     2'b01: ALUControl = `ALU_SUB;
+           <font color = "green">            ==></font>
+14                     2'b10: begin
+15                         case (funct3)
+                           <font color = "red">-2-</font>  
+16                             3'b000: ALUControl = (funct7[5] && op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;
+                                                                                 <font color = "green">-3-</font>  
+                                                                                 <font color = "green">==></font>  
+                                                                                 <font color = "green">==></font>  
+17                             3'b111: ALUControl = `ALU_AND;
+           <font color = "green">                    ==></font>
+18                             3'b110: ALUControl = `ALU_OR;
+           <font color = "green">                    ==></font>
+19                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "green">                    ==></font>
+20                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "green">                    ==></font>
+21                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "green">                    ==></font>
+22                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "green">                    ==></font>
+23                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "green">-4-</font>  
+                                                              <font color = "green">==></font>  
+                                                              <font color = "green">==></font>  
+24                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+25                         endcase
+26                     end
+27                     2'b11: begin
+28                         case (funct3)
+                           <font color = "red">-5-</font>  
+29                             3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;
+                                                                <font color = "green">-6-</font>  
+                                                                <font color = "green">==></font>  
+                                                                <font color = "green">==></font>  
+30                             3'b111: ALUControl = `ALU_AND;
+           <font color = "green">                    ==></font>
+31                             3'b110: ALUControl = `ALU_OR;
+           <font color = "green">                    ==></font>
+32                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "green">                    ==></font>
+33                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "green">                    ==></font>
+34                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "green">                    ==></font>
+35                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "green">                    ==></font>
+36                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "green">-7-</font>  
+                                                              <font color = "green">==></font>  
+                                                              <font color = "green">==></font>  
+37                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+38                         endcase
+39                     end
+40                     default: ALUControl = `ALU_ADD;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_4'>
+<a name="inst_tag_4_Line"></a>
+<b>Line Coverage for Instance : <a href="mod2.html#inst_tag_4" >Pipeline_top.core.CU.u_alu</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s0"><td class="lf">TOTAL</td><td></td><td>24</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">ALWAYS</td><td>11</td><td>24</td><td>0</td><td>0.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+10                          always @* begin
+11         <font color = "red">0/1     ==>          case (ALUOp)</font>
+12         <font color = "red">0/1     ==>              2'b00: ALUControl = `ALU_ADD;</font>
+13         <font color = "red">0/1     ==>              2'b01: ALUControl = `ALU_SUB;</font>
+14                                  2'b10: begin
+15         <font color = "red">0/1     ==>                  case (funct3)</font>
+16         <font color = "red">0/1     ==>                      3'b000: ALUControl = (funct7[5] &amp;&amp; op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;</font>
+17         <font color = "red">0/1     ==>                      3'b111: ALUControl = `ALU_AND;</font>
+18         <font color = "red">0/1     ==>                      3'b110: ALUControl = `ALU_OR;</font>
+19         <font color = "red">0/1     ==>                      3'b100: ALUControl = `ALU_XOR;</font>
+20         <font color = "red">0/1     ==>                      3'b010: ALUControl = `ALU_SLT;</font>
+21         <font color = "red">0/1     ==>                      3'b011: ALUControl = `ALU_SLTU;</font>
+22         <font color = "red">0/1     ==>                      3'b001: ALUControl = `ALU_SLL;</font>
+23         <font color = "red">0/1     ==>                      3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;</font>
+24         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+25                                      endcase
+26                                  end
+27                                  2'b11: begin
+28         <font color = "red">0/1     ==>                  case (funct3)</font>
+29         <font color = "red">0/1     ==>                      3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;</font>
+30         <font color = "red">0/1     ==>                      3'b111: ALUControl = `ALU_AND;</font>
+31         <font color = "red">0/1     ==>                      3'b110: ALUControl = `ALU_OR;</font>
+32         <font color = "red">0/1     ==>                      3'b100: ALUControl = `ALU_XOR;</font>
+33         <font color = "red">0/1     ==>                      3'b010: ALUControl = `ALU_SLT;</font>
+34         <font color = "red">0/1     ==>                      3'b011: ALUControl = `ALU_SLTU;</font>
+35         <font color = "red">0/1     ==>                      3'b001: ALUControl = `ALU_SLL;</font>
+36         <font color = "red">0/1     ==>                      3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;</font>
+37         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+38                                      endcase
+39                                  end
+40         <font color = "red">0/1     ==>              default: ALUControl = `ALU_ADD;</font>
+</pre>
+<hr>
+<a name="inst_tag_4_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod2.html#inst_tag_4" >Pipeline_top.core.CU.u_alu</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s0"><td class="lf">Conditions</td><td>13</td><td>0</td><td>0.00</td></tr>
+<tr class="s0"><td class="lf">Logical</td><td>13</td><td>0</td><td>0.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ EXPRESSION ((funct7[5] &amp;&amp; (op == 7'b0110011)) ? 4'b1 : 4'b0)
+             ----------------1----------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (funct7[5] &amp;&amp; (op == 7'b0110011))
+                 ----1----    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (op == 7'b0110011)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       23
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       29
+ EXPRESSION (funct7[5] ? 4'b1 : 4'b0)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       36
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_4_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod2.html#inst_tag_4" >Pipeline_top.core.CU.u_alu</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">46</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">46</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>ALUOp[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct3[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct7[6:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op[6:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ALUControl[3:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_4_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod2.html#inst_tag_4" >Pipeline_top.core.CU.u_alu</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Branches</td>
+<td></td>
+<td class="rt">25</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>CASE</td>
+<td class="rt">11</td>
+<td class="rt">25</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+11                 case (ALUOp)
+                   <font color = "red">-1-</font>  
+12                     2'b00: ALUControl = `ALU_ADD;
+           <font color = "red">            ==></font>
+13                     2'b01: ALUControl = `ALU_SUB;
+           <font color = "red">            ==></font>
+14                     2'b10: begin
+15                         case (funct3)
+                           <font color = "red">-2-</font>  
+16                             3'b000: ALUControl = (funct7[5] && op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;
+                                                                                 <font color = "red">-3-</font>  
+                                                                                 <font color = "red">==></font>  
+                                                                                 <font color = "red">==></font>  
+17                             3'b111: ALUControl = `ALU_AND;
+           <font color = "red">                    ==></font>
+18                             3'b110: ALUControl = `ALU_OR;
+           <font color = "red">                    ==></font>
+19                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "red">                    ==></font>
+20                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "red">                    ==></font>
+21                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "red">                    ==></font>
+22                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "red">                    ==></font>
+23                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "red">-4-</font>  
+                                                              <font color = "red">==></font>  
+                                                              <font color = "red">==></font>  
+24                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+25                         endcase
+26                     end
+27                     2'b11: begin
+28                         case (funct3)
+                           <font color = "red">-5-</font>  
+29                             3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;
+                                                                <font color = "red">-6-</font>  
+                                                                <font color = "red">==></font>  
+                                                                <font color = "red">==></font>  
+30                             3'b111: ALUControl = `ALU_AND;
+           <font color = "red">                    ==></font>
+31                             3'b110: ALUControl = `ALU_OR;
+           <font color = "red">                    ==></font>
+32                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "red">                    ==></font>
+33                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "red">                    ==></font>
+34                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "red">                    ==></font>
+35                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "red">                    ==></font>
+36                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "red">-7-</font>  
+                                                              <font color = "red">==></font>  
+                                                              <font color = "red">==></font>  
+37                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+38                         endcase
+39                     end
+40                     default: ALUControl = `ALU_ADD;
+           <font color = "red">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b01 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_5'>
+<a name="inst_tag_5_Line"></a>
+<b>Line Coverage for Instance : <a href="mod2.html#inst_tag_5" >tb_top.dut.CU.u_alu</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>24</td><td>22</td><td>91.67</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>11</td><td>24</td><td>22</td><td>91.67</td></tr>
+</table>
+<pre class="code"><br clear=all>
+10                          always @* begin
+11         1/1                  case (ALUOp)
+12         1/1                      2'b00: ALUControl = `ALU_ADD;
+13         1/1                      2'b01: ALUControl = `ALU_SUB;
+14                                  2'b10: begin
+15         1/1                          case (funct3)
+16         1/1                              3'b000: ALUControl = (funct7[5] &amp;&amp; op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;
+17         1/1                              3'b111: ALUControl = `ALU_AND;
+18         1/1                              3'b110: ALUControl = `ALU_OR;
+19         1/1                              3'b100: ALUControl = `ALU_XOR;
+20         1/1                              3'b010: ALUControl = `ALU_SLT;
+21         1/1                              3'b011: ALUControl = `ALU_SLTU;
+22         1/1                              3'b001: ALUControl = `ALU_SLL;
+23         1/1                              3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+24         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+25                                      endcase
+26                                  end
+27                                  2'b11: begin
+28         1/1                          case (funct3)
+29         1/1                              3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;
+30         1/1                              3'b111: ALUControl = `ALU_AND;
+31         1/1                              3'b110: ALUControl = `ALU_OR;
+32         1/1                              3'b100: ALUControl = `ALU_XOR;
+33         1/1                              3'b010: ALUControl = `ALU_SLT;
+34         1/1                              3'b011: ALUControl = `ALU_SLTU;
+35         1/1                              3'b001: ALUControl = `ALU_SLL;
+36         1/1                              3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+37         <font color = "red">0/1     ==>                      default: ALUControl = `ALU_ADD;</font>
+38                                      endcase
+39                                  end
+40         1/1                      default: ALUControl = `ALU_ADD;
+</pre>
+<hr>
+<a name="inst_tag_5_Cond"></a>
+<b>Cond Coverage for Instance : <a href="mod2.html#inst_tag_5" >tb_top.dut.CU.u_alu</a></b><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">Conditions</td><td>13</td><td>12</td><td>92.31</td></tr>
+<tr class="s9"><td class="lf">Logical</td><td>13</td><td>12</td><td>92.31</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ EXPRESSION ((funct7[5] &amp;&amp; (op == 7'b0110011)) ? 4'b1 : 4'b0)
+             ----------------1----------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (funct7[5] &amp;&amp; (op == 7'b0110011))
+                 ----1----    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       16
+ SUB-EXPRESSION (op == 7'b0110011)
+                ---------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       23
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       29
+ EXPRESSION (funct7[5] ? 4'b1 : 4'b0)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       36
+ EXPRESSION (funct7[5] ? 4'd11 : 4'd10)
+             ----1----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="inst_tag_5_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod2.html#inst_tag_5" >tb_top.dut.CU.u_alu</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Totals</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Total Bits</td>
+<td class="rt">46</td>
+<td class="rt">46</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">46</td>
+<td class="rt">46</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">23</td>
+<td class="rt">23</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>ALUOp[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct3[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>funct7[6:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>op[6:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ALUControl[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_5_Branch"></a>
+<b>Branch Coverage for Instance : <a href="mod2.html#inst_tag_5" >tb_top.dut.CU.u_alu</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">25</td>
+<td class="rt">23</td>
+<td class="rt">92.00 </td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">11</td>
+<td class="rt">25</td>
+<td class="rt">23</td>
+<td class="rt">92.00 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+11                 case (ALUOp)
+                   <font color = "green">-1-</font>  
+12                     2'b00: ALUControl = `ALU_ADD;
+           <font color = "green">            ==></font>
+13                     2'b01: ALUControl = `ALU_SUB;
+           <font color = "green">            ==></font>
+14                     2'b10: begin
+15                         case (funct3)
+                           <font color = "red">-2-</font>  
+16                             3'b000: ALUControl = (funct7[5] && op == `OPC_OP) ? `ALU_SUB : `ALU_ADD;
+                                                                                 <font color = "green">-3-</font>  
+                                                                                 <font color = "green">==></font>  
+                                                                                 <font color = "green">==></font>  
+17                             3'b111: ALUControl = `ALU_AND;
+           <font color = "green">                    ==></font>
+18                             3'b110: ALUControl = `ALU_OR;
+           <font color = "green">                    ==></font>
+19                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "green">                    ==></font>
+20                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "green">                    ==></font>
+21                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "green">                    ==></font>
+22                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "green">                    ==></font>
+23                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "green">-4-</font>  
+                                                              <font color = "green">==></font>  
+                                                              <font color = "green">==></font>  
+24                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+25                         endcase
+26                     end
+27                     2'b11: begin
+28                         case (funct3)
+                           <font color = "red">-5-</font>  
+29                             3'b000: ALUControl = (funct7[5]) ? `ALU_SUB : `ALU_ADD;
+                                                                <font color = "green">-6-</font>  
+                                                                <font color = "green">==></font>  
+                                                                <font color = "green">==></font>  
+30                             3'b111: ALUControl = `ALU_AND;
+           <font color = "green">                    ==></font>
+31                             3'b110: ALUControl = `ALU_OR;
+           <font color = "green">                    ==></font>
+32                             3'b100: ALUControl = `ALU_XOR;
+           <font color = "green">                    ==></font>
+33                             3'b010: ALUControl = `ALU_SLT;
+           <font color = "green">                    ==></font>
+34                             3'b011: ALUControl = `ALU_SLTU;
+           <font color = "green">                    ==></font>
+35                             3'b001: ALUControl = `ALU_SLL;
+           <font color = "green">                    ==></font>
+36                             3'b101: ALUControl = funct7[5] ? `ALU_SRA : `ALU_SRL;
+                                                              <font color = "green">-7-</font>  
+                                                              <font color = "green">==></font>  
+                                                              <font color = "green">==></font>  
+37                             default: ALUControl = `ALU_ADD;
+           <font color = "red">                    ==></font>
+38                         endcase
+39                     end
+40                     default: ALUControl = `ALU_ADD;
+           <font color = "green">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>2'b00 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b01 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b10 </td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b10 </td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b000 </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b111 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b110 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b100 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b010 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b011 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b001 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>3'b101 </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>2'b11 </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_4">
+    <li>
+      <a href="#inst_tag_4_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_4_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_4_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_4_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="inst_tag_5">
+    <li>
+      <a href="#inst_tag_5_Line">Line</a>    </li>
+    <li>
+      <a href="#inst_tag_5_Cond">Cond</a>    </li>
+    <li>
+      <a href="#inst_tag_5_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_5_Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_ALU_Decoder">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
