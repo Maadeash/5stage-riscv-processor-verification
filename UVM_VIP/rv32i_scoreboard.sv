@@ -1,26 +1,8 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `ifndef RV32I_SCOREBOARD_SV
 `define RV32I_SCOREBOARD_SV
-
 `include "uvm_macros.svh"
 import uvm_pkg::*;
 import rv32i_pkg::*;
-
-
-
 
 class rv32i_expected_wb;
     logic [4:0]  rd;
