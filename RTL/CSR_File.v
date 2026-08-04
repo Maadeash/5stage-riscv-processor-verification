@@ -60,21 +60,9 @@ module CSR_File(
 
     always @(csr_raddr or mstatus or mie or mtvec or mepc or mcause or mtval or mip) begin
     	csr_rdata = csr_read(csr_raddr);
-    	$display("\n========== CSR READ ==========");
-    	$display("TIME=%0t",$time);
-    	$display("csr_raddr = %h", csr_raddr);
-    	$display("csr_rdata = %h", csr_rdata);
     end
 
     always @(posedge clk or negedge rst) begin
-	$display("\n========== CSR WRITE ==========");
-	$display("TIME=%0t",$time);
-	$display("csr_we    = %b", csr_we);
-	$display("csr_cmd   = %0d", csr_cmd);
-	$display("csr_addr  = %h", csr_addr);
-	$display("csr_raddr = %h", csr_raddr);
-	$display("csr_wdata = %h", csr_wdata);
-	$display("OLD VALUE = %h", csr_read(csr_addr));
         if (!rst) begin
             mstatus <= 32'd0;
             mtvec   <= 32'd0;
