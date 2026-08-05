@@ -217,7 +217,8 @@ The generated `run/regression_report.txt` shows:
 
 ## Functional Coverage Summary
 
-<img width="1620" height="784" alt="image" src="https://github.com/user-attachments/assets/23f26793-95c3-48c7-aedd-756585ed3335" />
+<img width="1074" height="152" alt="image" src="https://github.com/user-attachments/assets/14cef1c7-cf28-4168-befa-7b01302ff9a2" />
+
 
 The generated coverage dashboard is in `run/cov_report/`.
 
