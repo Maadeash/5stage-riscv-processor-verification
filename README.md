@@ -351,10 +351,9 @@ RISC-V(Pipelined)/
 
 ---
 
-## Limitations / Future Work
+## Future Work
 
 * Overall coverage is not yet closed; the current report still shows uncovered line, condition, toggle, branch, and assertion items
-* FSM coverage is not reported in the current run
 * The current regression script covers 13 tests, while the coverage flow includes 15 tests
 * More negative tests, corner-case stimulus, and additional coverage-driven scenarios would help close the remaining gaps
 
