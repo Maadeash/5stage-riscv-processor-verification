@@ -174,9 +174,10 @@ The sequence library includes:
 * random
 * coverage closure
 
-### Test summary screenshot
+### Test summary 
 
-`![Test Summary](docs/images/test_summary.png)`
+<img width="1555" height="797" alt="image" src="https://github.com/user-attachments/assets/b7758ca8-559e-4c3f-a5bc-3f25e67dbe83" />
+
 
 This is useful as a visual summary of the test matrix, but `run/cov_report/tests.txt` is often better kept as text because it lists the exact tests used to build the report.
 
@@ -207,9 +208,10 @@ The generated `run/regression_report.txt` shows:
 * **Failed:** 0
 * **Pass rate:** 100.00%
 
-### Regression screenshot
+### Regression test output
 
-`![Regression Summary](docs/images/regression_summary.png)`
+<img width="975" height="529" alt="image" src="https://github.com/user-attachments/assets/1a884ca1-4b87-4725-8645-242e2c68ebd0" />
+
 
 ---
 
