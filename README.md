@@ -3,8 +3,6 @@
 A SystemVerilog/UVM verification environment for a 5-stage pipelined RV32I RISC-V processor.
 This repository includes RTL, a structured UVM testbench, directed and regression tests, assertions, functional coverage, and Synopsys VCS/urg coverage reports.
 
-> All claims in this README are based only on the files and generated reports present in this repository.
-
 ---
 
 ## Architecture Overview
