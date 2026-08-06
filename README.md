@@ -289,7 +289,6 @@ The assertion set focuses on:
 ## Tools Used
 
 * Synopsys VCS
-* Synopsys urg
 * Python 3 for regression automation
 
 ---
