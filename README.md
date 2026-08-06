@@ -35,12 +35,14 @@ The repository also contains `Pipeline_top.v` as a wrapper around the core and a
 
 ### Architecture diagram of RISC-V
 
-<img width="1029" height="610" alt="image" src="https://github.com/user-attachments/assets/c0db24a3-1b75-4e93-a22c-44beae634317" />
+<img width="850" height="401" alt="image" src="https://github.com/user-attachments/assets/17924dd8-5738-4cf9-9913-8e228de6ed05" />
+
 
 
 ### Block diagram
 
-<img width="1061" height="703" alt="image" src="https://github.com/user-attachments/assets/e09adbc1-1c2b-4c1b-9103-818cb6e070c1" />
+<img width="1627" height="967" alt="image" src="https://github.com/user-attachments/assets/e39092b0-fe76-4372-8994-9871f02bef57" />
+
 
 
 ---
