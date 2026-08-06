@@ -93,8 +93,7 @@ module rv32i_assertions_bind (
     property p_no_fwd_from_x0;
         @(posedge clk) disable iff (!rst)
         (tb_top.dut.fwdA != 2'b00) |->
-        ((tb_top.dut.fwdA == 2'b10) ? (tb_top.dut.exmem_rd != 5'd0) :
-                                       (tb_top.dut.memwb_rd != 5'd0));
+        ((tb_top.dut.fwdA == 2'b10) ? (tb_top.dut.exmem_rd != 5'd0) :(tb_top.dut.memwb_rd != 5'd0));
     endproperty
     A13_NO_FWD_FROM_X0: assert property (p_no_fwd_from_x0)
         else $error("ASSERT FAIL [A13]: Forwarding from x0 detected");
