@@ -33,12 +33,12 @@ The RTL source set also includes the main supporting blocks used by the core:
 
 The repository also contains `Pipeline_top.v` as a wrapper around the core and a standalone `Hazard_unit.v` source file.
 
-### Architecture diagram
+### Architecture diagram of RISC-V
 
 <img width="1029" height="610" alt="image" src="https://github.com/user-attachments/assets/c0db24a3-1b75-4e93-a22c-44beae634317" />
 
 
-### Mermaid diagram
+### Block diagram
 
 <img width="1061" height="703" alt="image" src="https://github.com/user-attachments/assets/e09adbc1-1c2b-4c1b-9103-818cb6e070c1" />
 
