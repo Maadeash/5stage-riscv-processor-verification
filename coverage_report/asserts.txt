@@ -1,0 +1,170 @@
+Assertions
+
+
+Assertions by Category
+           ASSERT PROPERTIES SEQUENCES
+Total          83          0         0
+Category 0     83          0         0
+
+-------------------------------------------------------------------------------
+
+Assertions by Severity
+           ASSERT PROPERTIES SEQUENCES
+Total          83          0         0
+Severity 0     83          0         0
+
+-------------------------------------------------------------------------------
+
+Summary for Assertions
+                 NUMBER PERCENT
+Total Number         83  100.00
+Uncovered            45   54.22
+Success              38   45.78
+Failure               0    0.00
+Incomplete            2    2.41
+Without Attempts     42   50.60
+
+-------------------------------------------------------------------------------
+
+Detail Report for Assertions
+
+Assertions Uncovered:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+Pipeline_top.core.u_assert.A10_FWDA_MEM_EX                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A11_FWDB_EX_EX                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A12_FWDB_MEM_EX                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0                  0        0        0              0        0          0
+Pipeline_top.core.u_assert.A14_LOAD_USE_STALL                  0        0        0              0        0          0
+Pipeline_top.core.u_assert.A15_JUMP_REDIRECT                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A16_JALR_LSB                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A17_PC_PLUS4                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A18_PC_REDIRECT                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A19_ECALL_TRAP                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A1_RESET_PC                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A20_EBREAK_TRAP                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A22_TRAP_REDIRECT                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A23_TRAP_TARGET                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A24_MRET_TARGET                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID                0        0        0              0        0          0
+Pipeline_top.core.u_assert.A26_LW_ALIGNED                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A27_SW_STROBE                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM             0        0        0              0        0          0
+Pipeline_top.core.u_assert.A29_WB_X0_GUARD                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A2_RESET_VALID                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A30_WB_PC4                          0        0        0              0        0          0
+Pipeline_top.core.u_assert.A31_CSR_WRITE                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A32_TRAP_MEPC                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A33_TRAP_MIE                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A34_MRET_MIE                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A35_IRQ_MIE                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A36_IRQ_SOURCE                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A37_EXMEM_DMEM                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE                0        0        0              0        0          0
+Pipeline_top.core.u_assert.A39_NOP_NO_WRITE                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A3_X0_IMMUTABLE                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A40_BRANCH_ALIGN                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A4_IFID_RST                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A5_IDEX_RST                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A6_EXMEM_RST                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A9_FWDA_EX_EX                       0        0        0              0        0          0
+tb_top.dut.u_assert.A14_LOAD_USE_STALL                         0        0     1554              0        0          0
+tb_top.dut.u_assert.A36_IRQ_SOURCE                             0        0     1554              0        0          0
+tb_top.dut.u_assert.A38_PIPELINE_ADVANCE                       0        0     1554              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+Assertions Success:
+                          ASSERTIONS                          CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_assert.A10_FWDA_MEM_EX                                  0        0     1554             33        0          0
+tb_top.dut.u_assert.A11_FWDB_EX_EX                                   0        0     1554             62        0          0
+tb_top.dut.u_assert.A12_FWDB_MEM_EX                                  0        0     1554             23        0          0
+tb_top.dut.u_assert.A13_NO_FWD_FROM_X0                               0        0     1554             96        0          0
+tb_top.dut.u_assert.A15_JUMP_REDIRECT                                0        0     1554              4        0          0
+tb_top.dut.u_assert.A16_JALR_LSB                                     0        0     1554              1        0          0
+tb_top.dut.u_assert.A17_PC_PLUS4                                     0        0     1554            330        0          3
+tb_top.dut.u_assert.A18_PC_REDIRECT                                  0        0     1554             31        0          0
+tb_top.dut.u_assert.A19_ECALL_TRAP                                   0        0     1554              3        0          0
+tb_top.dut.u_assert.A1_RESET_PC                                      0        0     1554             18        0          0
+tb_top.dut.u_assert.A20_EBREAK_TRAP                                  0        0     1554              1        0          0
+tb_top.dut.u_assert.A21_ILLEGAL_TRAP                                 0        0     1554              1        0          0
+tb_top.dut.u_assert.A22_TRAP_REDIRECT                                0        0     1554             17        0          0
+tb_top.dut.u_assert.A23_TRAP_TARGET                                  0        0     1554             17        0          0
+tb_top.dut.u_assert.A24_MRET_TARGET                                  0        0     1554              5        0          0
+tb_top.dut.u_assert.A25_DMEM_NEEDS_VALID                             0        0     1554             30        0          0
+tb_top.dut.u_assert.A26_LW_ALIGNED                                   0        0     1554              8        0          0
+tb_top.dut.u_assert.A27_SW_STROBE                                    0        0     1554             12        0          0
+tb_top.dut.u_assert.A28_NO_IMEM_DURING_DMEM                          0        0     1554             30        0          0
+tb_top.dut.u_assert.A29_WB_X0_GUARD                                  0        0     1554            294        0          0
+tb_top.dut.u_assert.A2_RESET_VALID                                   0        0     1554            470        0          0
+tb_top.dut.u_assert.A30_WB_PC4                                       0        0     1554              4        0          0
+tb_top.dut.u_assert.A31_CSR_WRITE                                    0        0     1554             26        0          0
+tb_top.dut.u_assert.A32_TRAP_MEPC                                    0        0     1554             17        0          0
+tb_top.dut.u_assert.A33_TRAP_MIE                                     0        0     1554             17        0          0
+tb_top.dut.u_assert.A34_MRET_MIE                                     0        0     1554              5        0          0
+tb_top.dut.u_assert.A35_IRQ_MIE                                      0        0     1554              1        0          0
+tb_top.dut.u_assert.A37_EXMEM_DMEM                                   0        0     1554             30        0          0
+tb_top.dut.u_assert.A39_NOP_NO_WRITE                                 0        0     1554            118        0          0
+tb_top.dut.u_assert.A3_X0_IMMUTABLE                                  0        0     1554            284        0          8
+tb_top.dut.u_assert.A40_BRANCH_ALIGN                                 0        0     1554              6        0          0
+tb_top.dut.u_assert.A4_IFID_RST                                      0        0     1554            470        0          0
+tb_top.dut.u_assert.A5_IDEX_RST                                      0        0     1554            470        0          0
+tb_top.dut.u_assert.A6_EXMEM_RST                                     0        0     1554            470        0          0
+tb_top.dut.u_assert.A7_REDIRECT_FLUSH                                0        0     1554             31        0          0
+tb_top.dut.u_assert.A8_IDEX_FROM_IFID                                0        0     1554            320        0          0
+tb_top.dut.u_assert.A9_FWDA_EX_EX                                    0        0     1554             63        0          0
+uvm_pkg.\uvm_component_name_check_visitor::visit .unnamed$$_0        0        0      765            765        0          0
+
+Assertions Incomplete:
+             ASSERTIONS             CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+tb_top.dut.u_assert.A17_PC_PLUS4           0        0     1554            330        0          3
+tb_top.dut.u_assert.A3_X0_IMMUTABLE        0        0     1554            284        0          8
+
+Assertions Without Attempts:
+                       ASSERTIONS                       CATEGORY SEVERITY ATTEMPTS REAL SUCCESSES FAILURES INCOMPLETE
+Pipeline_top.core.u_assert.A10_FWDA_MEM_EX                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A11_FWDB_EX_EX                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A12_FWDB_MEM_EX                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A13_NO_FWD_FROM_X0                  0        0        0              0        0          0
+Pipeline_top.core.u_assert.A14_LOAD_USE_STALL                  0        0        0              0        0          0
+Pipeline_top.core.u_assert.A15_JUMP_REDIRECT                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A16_JALR_LSB                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A17_PC_PLUS4                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A18_PC_REDIRECT                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A19_ECALL_TRAP                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A1_RESET_PC                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A20_EBREAK_TRAP                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A21_ILLEGAL_TRAP                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A22_TRAP_REDIRECT                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A23_TRAP_TARGET                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A24_MRET_TARGET                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A25_DMEM_NEEDS_VALID                0        0        0              0        0          0
+Pipeline_top.core.u_assert.A26_LW_ALIGNED                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A27_SW_STROBE                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A28_NO_IMEM_DURING_DMEM             0        0        0              0        0          0
+Pipeline_top.core.u_assert.A29_WB_X0_GUARD                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A2_RESET_VALID                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A30_WB_PC4                          0        0        0              0        0          0
+Pipeline_top.core.u_assert.A31_CSR_WRITE                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A32_TRAP_MEPC                       0        0        0              0        0          0
+Pipeline_top.core.u_assert.A33_TRAP_MIE                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A34_MRET_MIE                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A35_IRQ_MIE                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A36_IRQ_SOURCE                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A37_EXMEM_DMEM                      0        0        0              0        0          0
+Pipeline_top.core.u_assert.A38_PIPELINE_ADVANCE                0        0        0              0        0          0
+Pipeline_top.core.u_assert.A39_NOP_NO_WRITE                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A3_X0_IMMUTABLE                     0        0        0              0        0          0
+Pipeline_top.core.u_assert.A40_BRANCH_ALIGN                    0        0        0              0        0          0
+Pipeline_top.core.u_assert.A4_IFID_RST                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A5_IDEX_RST                         0        0        0              0        0          0
+Pipeline_top.core.u_assert.A6_EXMEM_RST                        0        0        0              0        0          0
+Pipeline_top.core.u_assert.A7_REDIRECT_FLUSH                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A8_IDEX_FROM_IFID                   0        0        0              0        0          0
+Pipeline_top.core.u_assert.A9_FWDA_EX_EX                       0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_read .unnamed$$_0.unnamed$$_1         0        0        0              0        0          0
+uvm_pkg.\uvm_reg_map::do_write .unnamed$$_0.unnamed$$_1        0        0        0              0        0          0
+
+

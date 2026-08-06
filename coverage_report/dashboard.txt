@@ -1,0 +1,42 @@
+Dashboard
+
+Date: Tue Aug  4 08:06:07 2026
+
+User: faculty1
+
+Version: X-2025.06-SP2-1
+Command line: urg -dir simv.vdb -report cov_report -format both
+Number of tests: 15
+
+-------------------------------------------------------------------------------
+Total Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT GROUP  
+ 48.83  35.03  44.19  35.26 --      32.69  45.78 100.00 
+
+
+-------------------------------------------------------------------------------
+Hierarchical coverage data for top-level instances 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT NAME                               
+  6.82 --      13.64   0.00 --     --     --     Hazard_unit                        
+  0.00 --       0.00   0.00 --       0.00 --     Mux                                
+  2.78 --       8.33   0.00 --       0.00 --     Mux_3_by_1                         
+  0.00 --     --       0.00 --     --     --     PC_Adder                           
+  0.00   0.00 --       0.00 --       0.00 --     PC_Module                          
+  1.67   2.78   4.70   0.00 --       0.87   0.00 Pipeline_top                       
+ 87.99  94.61  94.13  69.92 --      88.79  92.50 tb_top                             
+ 28.94  31.82  25.00 --     --      30.00 --     uvm_custom_install_recording       
+  3.19   5.06   3.03   0.00 --       4.66 --     uvm_custom_install_verdi_recording 
+ 33.33 --     --     --     --     --      33.33 uvm_pkg                            
+
+
+-------------------------------------------------------------------------------
+Total Module Definition Coverage Summary 
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT 
+ 65.15  50.73  75.23  62.21 --      49.21  88.37 
+
+
+-------------------------------------------------------------------------------
+Total Groups Coverage Summary 
+SCORE  WEIGHT 
+100.00 1      
+

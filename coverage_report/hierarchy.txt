@@ -1,0 +1,74 @@
+Design Hierarchy
+
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT              
+  6.82 --      13.64   0.00 --     --     --     Hazard_unit  
+  0.00 --       0.00   0.00 --       0.00 --     Mux          
+  2.78 --       8.33   0.00 --       0.00 --     Mux_3_by_1   
+  0.00 --     --       0.00 --     --     --     PC_Adder     
+  0.00   0.00 --       0.00 --       0.00 --     PC_Module    
+  1.67   2.78   4.70   0.00 --       0.87   0.00 Pipeline_top 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT      
+    1.67   2.78   4.70   0.00 --       0.87   0.00 core 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+      0.00   0.00   0.00   0.00 --       0.00 --     CSR 
+      0.60   0.00   2.38   0.00 --       0.00 --     CU  
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT       
+        0.00   0.00   0.00   0.00 --       0.00 --     u_alu 
+        0.00   0.00 --       0.00 --       0.00 --     u_dec 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT          
+      9.03  18.75 --       0.00 --       8.33 --     DMEM     
+      0.00   0.00   0.00   0.00 --       0.00 --     FU       
+     31.41  69.23 --       0.00 --      25.00 --     IMEM     
+      3.85   0.00  15.38   0.00 --       0.00 --     RF       
+      0.00   0.00 --       0.00 --       0.00 --     SE       
+      2.21   0.00   8.82   0.00 --       0.00 --     UALU     
+      0.00 --     --       0.00 --     --       0.00 u_assert 
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT        
+ 87.99  94.61  94.13  69.92 --      88.79  92.50 tb_top 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   88.13  95.13  94.13  69.32 --      89.57  92.50 dut 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+     67.16  85.96  75.00  38.42 --      69.23 --     CSR 
+     94.78  93.81  96.03 100.00 --      89.29 --     CU  
+      
+      ----------------
+      SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT       
+       93.99  91.67  92.31 100.00 --      92.00 --     u_alu 
+      100.00 100.00 --     100.00 --     100.00 --     u_dec 
+    
+    ----------------
+    SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT          
+     93.04  93.75 --      93.69 --      91.67 --     DMEM     
+     99.26 100.00  97.06 100.00 --     100.00 --     FU       
+     76.48  92.31 --      62.12 --      75.00 --     IMEM     
+     96.54 100.00  92.31  93.86 --     100.00 --     RF       
+     89.68  85.71 --     100.00 --      83.33 --     SE       
+     95.45  94.12  97.06  95.62 --      95.00 --     UALU     
+     96.25 --     --     100.00 --     --      92.50 u_assert 
+  
+  ----------------
+  SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT     
+   73.48 --     --      73.48 --     --     --     vif 
+
+----------------
+SCORE  LINE   COND   TOGGLE FSM    BRANCH ASSERT                                    
+ 28.94  31.82  25.00 --     --      30.00 --     uvm_custom_install_recording       
+  3.19   5.06   3.03   0.00 --       4.66 --     uvm_custom_install_verdi_recording 
+ 33.33 --     --     --     --     --      33.33 uvm_pkg                            
+

@@ -1,0 +1,196 @@
+Test,Category,Coverage%
+smoke,Opcode,54.5
+smoke,ALU Control,9.1
+smoke,Branch×Taken,16.7
+smoke,Forwarding,56.9
+smoke,WB Source,50.0
+smoke,Trap Cause,14.3
+smoke,Load Width,20.0
+smoke,Store Width,33.3
+smoke,Mem Alignment,25.0
+smoke,Reg Addresses,12.5
+smoke,R-type f3,12.5
+smoke,I-type f3,12.5
+smoke,Control Flow,33.3
+alu,Opcode,36.4
+alu,ALU Control,100.0
+alu,Branch×Taken,16.7
+alu,Forwarding,87.5
+alu,WB Source,25.0
+alu,Trap Cause,0.0
+alu,Load Width,0.0
+alu,Store Width,0.0
+alu,Mem Alignment,0.0
+alu,Reg Addresses,37.5
+alu,R-type f3,100.0
+alu,I-type f3,100.0
+alu,Control Flow,16.7
+branch,Opcode,18.2
+branch,ALU Control,18.2
+branch,Branch×Taken,97.2
+branch,Forwarding,26.4
+branch,WB Source,25.0
+branch,Trap Cause,0.0
+branch,Load Width,0.0
+branch,Store Width,0.0
+branch,Mem Alignment,0.0
+branch,Reg Addresses,15.6
+branch,R-type f3,0.0
+branch,I-type f3,12.5
+branch,Control Flow,33.3
+jump,Opcode,27.3
+jump,ALU Control,9.1
+jump,Branch×Taken,16.7
+jump,Forwarding,26.4
+jump,WB Source,50.0
+jump,Trap Cause,0.0
+jump,Load Width,0.0
+jump,Store Width,0.0
+jump,Mem Alignment,0.0
+jump,Reg Addresses,15.6
+jump,R-type f3,0.0
+jump,I-type f3,12.5
+jump,Control Flow,100.0
+forwarding,Opcode,18.2
+forwarding,ALU Control,9.1
+forwarding,Branch×Taken,16.7
+forwarding,Forwarding,95.8
+forwarding,WB Source,25.0
+forwarding,Trap Cause,0.0
+forwarding,Load Width,0.0
+forwarding,Store Width,0.0
+forwarding,Mem Alignment,0.0
+forwarding,Reg Addresses,40.6
+forwarding,R-type f3,12.5
+forwarding,I-type f3,12.5
+forwarding,Control Flow,16.7
+hazard,Opcode,36.4
+hazard,ALU Control,9.1
+hazard,Branch×Taken,16.7
+hazard,Forwarding,72.2
+hazard,WB Source,50.0
+hazard,Trap Cause,0.0
+hazard,Load Width,20.0
+hazard,Store Width,33.3
+hazard,Mem Alignment,25.0
+hazard,Reg Addresses,15.6
+hazard,R-type f3,12.5
+hazard,I-type f3,12.5
+hazard,Control Flow,16.7
+loadstore,Opcode,36.4
+loadstore,ALU Control,27.3
+loadstore,Branch×Taken,16.7
+loadstore,Forwarding,72.2
+loadstore,WB Source,50.0
+loadstore,Trap Cause,0.0
+loadstore,Load Width,80.0
+loadstore,Store Width,66.7
+loadstore,Mem Alignment,75.0
+loadstore,Reg Addresses,34.4
+loadstore,R-type f3,0.0
+loadstore,I-type f3,12.5
+loadstore,Control Flow,16.7
+csr,Opcode,18.2
+csr,ALU Control,9.1
+csr,Branch×Taken,16.7
+csr,Forwarding,91.7
+csr,WB Source,50.0
+csr,Trap Cause,0.0
+csr,Load Width,0.0
+csr,Store Width,0.0
+csr,Mem Alignment,0.0
+csr,Reg Addresses,28.1
+csr,R-type f3,0.0
+csr,I-type f3,12.5
+csr,Control Flow,16.7
+trap,Opcode,18.2
+trap,ALU Control,9.1
+trap,Branch×Taken,16.7
+trap,Forwarding,56.9
+trap,WB Source,50.0
+trap,Trap Cause,28.6
+trap,Load Width,0.0
+trap,Store Width,0.0
+trap,Mem Alignment,0.0
+trap,Reg Addresses,9.4
+trap,R-type f3,0.0
+trap,I-type f3,12.5
+trap,Control Flow,33.3
+irq,Opcode,18.2
+irq,ALU Control,9.1
+irq,Branch×Taken,16.7
+irq,Forwarding,56.9
+irq,WB Source,50.0
+irq,Trap Cause,14.3
+irq,Load Width,0.0
+irq,Store Width,0.0
+irq,Mem Alignment,0.0
+irq,Reg Addresses,12.5
+irq,R-type f3,0.0
+irq,I-type f3,12.5
+irq,Control Flow,33.3
+reset,Opcode,18.2
+reset,ALU Control,9.1
+reset,Branch×Taken,16.7
+reset,Forwarding,26.4
+reset,WB Source,50.0
+reset,Trap Cause,0.0
+reset,Load Width,20.0
+reset,Store Width,0.0
+reset,Mem Alignment,0.0
+reset,Reg Addresses,12.5
+reset,R-type f3,0.0
+reset,I-type f3,12.5
+reset,Control Flow,16.7
+misalign,Opcode,27.3
+misalign,ALU Control,9.1
+misalign,Branch×Taken,16.7
+misalign,Forwarding,72.2
+misalign,WB Source,50.0
+misalign,Trap Cause,14.3
+misalign,Load Width,20.0
+misalign,Store Width,0.0
+misalign,Mem Alignment,0.0
+misalign,Reg Addresses,6.2
+misalign,R-type f3,0.0
+misalign,I-type f3,12.5
+misalign,Control Flow,33.3
+random,Opcode,27.3
+random,ALU Control,18.2
+random,Branch×Taken,16.7
+random,Forwarding,26.4
+random,WB Source,25.0
+random,Trap Cause,14.3
+random,Load Width,20.0
+random,Store Width,0.0
+random,Mem Alignment,0.0
+random,Reg Addresses,6.2
+random,R-type f3,0.0
+random,I-type f3,12.5
+random,Control Flow,33.3
+covclose,Opcode,54.5
+covclose,ALU Control,18.2
+covclose,Branch×Taken,86.1
+covclose,Forwarding,95.8
+covclose,WB Source,75.0
+covclose,Trap Cause,42.9
+covclose,Load Width,0.0
+covclose,Store Width,33.3
+covclose,Mem Alignment,0.0
+covclose,Reg Addresses,90.6
+covclose,R-type f3,12.5
+covclose,I-type f3,12.5
+covclose,Control Flow,66.7
+memcover,Opcode,36.4
+memcover,ALU Control,27.3
+memcover,Branch×Taken,16.7
+memcover,Forwarding,72.2
+memcover,WB Source,50.0
+memcover,Trap Cause,0.0
+memcover,Load Width,100.0
+memcover,Store Width,100.0
+memcover,Mem Alignment,100.0
+memcover,Reg Addresses,31.2
+memcover,R-type f3,0.0
+memcover,I-type f3,12.5
+memcover,Control Flow,16.7

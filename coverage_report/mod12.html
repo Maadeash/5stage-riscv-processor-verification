@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: rv32i_assertions_bind</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_rv32i_assertions_bind'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_rv32i_assertions_bind')">rv32i_assertions_bind</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod12.html#Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#Assert" > 92.50</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv')">/home/faculty1/VLSI_PRIME_2026_EvEN/Maadeash K/RISC-V(Pipelined)/run/../UVM_VIP/rv32i_assertions.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left class="sortable">
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod12.html#inst_tag_20"  onclick="showContent('inst_tag_20')">Pipeline_top.core.u_assert</a></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod12.html#inst_tag_20_Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod12.html#inst_tag_20_Assert" >  0.00</a></td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod12.html#inst_tag_21"  onclick="showContent('inst_tag_21')">tb_top.dut.u_assert</a></td>
+<td class="s9 cl rt"> 96.25</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod12.html#inst_tag_21_Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#inst_tag_21_Assert" > 92.50</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='inst_tag_20'>
+<hr>
+<a name="inst_tag_20"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_20" >Pipeline_top.core.u_assert</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod12.html#inst_tag_20_Toggle" >  0.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt"><a href="mod12.html#inst_tag_20_Assert" >  0.00</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s0 cl rt">  1.33</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s0 cl rt">  5.33</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td class="s0 cl rt">  0.00</td>
+<td class="wht cl rt"></td>
+<td><a href="mod17.html#inst_tag_26" >core</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div name='inst_tag_21'>
+<hr>
+<a name="inst_tag_21"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_21" >tb_top.dut.u_assert</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt"><a href="mod12.html#inst_tag_21_Toggle" >100.00</a></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"><a href="mod12.html#inst_tag_21_Assert" > 92.50</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s9 cl rt"> 96.25</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 92.50</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s8 cl rt"> 88.23</td>
+<td class="s9 cl rt"> 98.56</td>
+<td class="s9 cl rt"> 93.00</td>
+<td class="s6 cl rt"> 67.82</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 93.55</td>
+<td class="wht cl rt"></td>
+<td><a href="mod17.html#inst_tag_27" >dut</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_rv32i_assertions_bind'>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod12.html" >rv32i_assertions_bind</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Totals</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Total Bits</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Assert"></a>
+Assert Coverage for Module : <a href="mod12.html" >rv32i_assertions_bind</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Attempted</th><th nowrap width=80>Percent</th><th nowrap width=80>Succeeded/Matched</th><th nowrap width=80>Percent</th></tr><tr>
+<td class="wht cl"><a href="#707404413" >Assertions</a></td>
+<td class="wht cl rt">40</td>
+<td class="s10 cl rt">40</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt">37</td>
+<td class="s9 cl rt">92.50 </td>
+</tr><tr>
+<td class="wht cl"><a href="#182124302" >Cover properties</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><a href="#324524105" >Cover sequences</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><b>Total</b></td>
+<td class="wht cl rt">40</td>
+<td class="s10 cl rt">40</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt">37</td>
+<td class="s9 cl rt">92.50 </td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<br clear=all>
+<a name="707404413"></a>
+<b>Assertion Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Real Successes</td><td>Failures</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="2077841459"></a>
+A10_FWDA_MEM_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">33</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="814739145"></a>
+A11_FWDB_EX_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">62</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2065261100"></a>
+A12_FWDB_MEM_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">23</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1529077733"></a>
+A13_NO_FWD_FROM_X0</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">96</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1784391226"></a>
+A14_LOAD_USE_STALL</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="490622263"></a>
+A15_JUMP_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1772888846"></a>
+A16_JALR_LSB</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1213195230"></a>
+A17_PC_PLUS4</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">330</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">3</td>
+</tr><tr>
+<td class="wht cl"><a name="127683157"></a>
+A18_PC_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">31</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1784861701"></a>
+A19_ECALL_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">3</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="614272618"></a>
+A1_RESET_PC</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">18</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="190295126"></a>
+A20_EBREAK_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="585343503"></a>
+A21_ILLEGAL_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="128438388"></a>
+A22_TRAP_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="26497066"></a>
+A23_TRAP_TARGET</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1669371804"></a>
+A24_MRET_TARGET</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1220872515"></a>
+A25_DMEM_NEEDS_VALID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="656682170"></a>
+A26_LW_ALIGNED</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">8</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="367118745"></a>
+A27_SW_STROBE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">12</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="61674758"></a>
+A28_NO_IMEM_DURING_DMEM</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2017274913"></a>
+A29_WB_X0_GUARD</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">294</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1725851686"></a>
+A2_RESET_VALID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1046854698"></a>
+A30_WB_PC4</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="73795194"></a>
+A31_CSR_WRITE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">26</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="642473022"></a>
+A32_TRAP_MEPC</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="903068689"></a>
+A33_TRAP_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1696029737"></a>
+A34_MRET_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="249586790"></a>
+A35_IRQ_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="715977609"></a>
+A36_IRQ_SOURCE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1252294844"></a>
+A37_EXMEM_DMEM</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="659821958"></a>
+A38_PIPELINE_ADVANCE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1103344901"></a>
+A39_NOP_NO_WRITE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">118</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2030336972"></a>
+A3_X0_IMMUTABLE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">284</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">8</td>
+</tr><tr>
+<td class="wht cl"><a name="481576518"></a>
+A40_BRANCH_ALIGN</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">6</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1377305820"></a>
+A4_IFID_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1383149265"></a>
+A5_IDEX_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1125088792"></a>
+A6_EXMEM_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1981186994"></a>
+A7_REDIRECT_FLUSH</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">31</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2049052312"></a>
+A8_IDEX_FROM_IFID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">320</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1402532071"></a>
+A9_FWDA_EX_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">63</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_20'>
+<a name="inst_tag_20_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod12.html#inst_tag_20" >Pipeline_top.core.u_assert</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s0">
+<td>Totals</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Total Bits</td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s0">
+<td>Ports</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td>Port Bits</td>
+<td class="rt">4</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr><tr class="s0">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">0</td>
+<td class="rt">0.00  </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_20_Assert"></a>
+<b>Assert Coverage for Instance : <a href="mod12.html#inst_tag_20" >Pipeline_top.core.u_assert</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Attempted</th><th nowrap width=80>Percent</th><th nowrap width=80>Succeeded/Matched</th><th nowrap width=80>Percent</th></tr><tr>
+<td class="wht cl"><a href="#1897252218" >Assertions</a></td>
+<td class="wht cl rt">40</td>
+<td class="s0 cl rt">0</td>
+<td class="s0 cl rt">0.00  </td>
+<td class="s0 cl rt">0</td>
+<td class="s0 cl rt">0.00  </td>
+</tr><tr>
+<td class="wht cl"><a href="#232564773" >Cover properties</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><a href="#2022438016" >Cover sequences</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><b>Total</b></td>
+<td class="wht cl rt">40</td>
+<td class="s0 cl rt">0</td>
+<td class="s0 cl rt">0.00  </td>
+<td class="s0 cl rt">0</td>
+<td class="s0 cl rt">0.00  </td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<br clear=all>
+<a name="1897252218"></a>
+<b>Assertion Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Real Successes</td><td>Failures</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="1906840106"></a>
+A10_FWDA_MEM_EX</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1075824814"></a>
+A11_FWDB_EX_EX</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="158726955"></a>
+A12_FWDB_MEM_EX</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="994600292"></a>
+A13_NO_FWD_FROM_X0</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2029499345"></a>
+A14_LOAD_USE_STALL</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1167555410"></a>
+A15_JUMP_REDIRECT</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1975355511"></a>
+A16_JALR_LSB</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1896674571"></a>
+A17_PC_PLUS4</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="983630068"></a>
+A18_PC_REDIRECT</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1747122876"></a>
+A19_ECALL_TRAP</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="987085395"></a>
+A1_RESET_PC</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1872250989"></a>
+A20_EBREAK_TRAP</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="960664198"></a>
+A21_ILLEGAL_TRAP</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1740600885"></a>
+A22_TRAP_REDIRECT</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1352902593"></a>
+A23_TRAP_TARGET</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2036771771"></a>
+A24_MRET_TARGET</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="792341108"></a>
+A25_DMEM_NEEDS_VALID</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="185587119"></a>
+A26_LW_ALIGNED</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1758867422"></a>
+A27_SW_STROBE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="696794339"></a>
+A28_NO_IMEM_DURING_DMEM</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1784357462"></a>
+A29_WB_X0_GUARD</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="171057725"></a>
+A2_RESET_VALID</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="107491309"></a>
+A30_WB_PC4</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="813049955"></a>
+A31_CSR_WRITE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1864858713"></a>
+A32_TRAP_MEPC</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1494288486"></a>
+A33_TRAP_MIE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2116809632"></a>
+A34_MRET_MIE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2034676431"></a>
+A35_IRQ_MIE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="724024302"></a>
+A36_IRQ_SOURCE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1913500397"></a>
+A37_EXMEM_DMEM</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="279809123"></a>
+A38_PIPELINE_ADVANCE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1018857458"></a>
+A39_NOP_NO_WRITE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="759160355"></a>
+A3_X0_IMMUTABLE</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1788373167"></a>
+A40_BRANCH_ALIGN</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1865956659"></a>
+A4_IFID_RST</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2027129336"></a>
+A5_IDEX_RST</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="2097762543"></a>
+A6_EXMEM_RST</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1724981915"></a>
+A7_REDIRECT_FLUSH</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1766076991"></a>
+A8_IDEX_FROM_IFID</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="932800848"></a>
+A9_FWDA_EX_EX</td>
+<td class="s3 cl rt">0</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
+</div>
+<div name='inst_tag_21'>
+<a name="inst_tag_21_Toggle"></a>
+<b>Toggle Coverage for Instance : <a href="mod12.html#inst_tag_21" >tb_top.dut.u_assert</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s10">
+<td>Totals</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Total Bits</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s10">
+<td>Ports</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>Port Bits</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>clk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>rst</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<hr>
+<a name="inst_tag_21_Assert"></a>
+<b>Assert Coverage for Instance : <a href="mod12.html#inst_tag_21" >tb_top.dut.u_assert</a></b><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Attempted</th><th nowrap width=80>Percent</th><th nowrap width=80>Succeeded/Matched</th><th nowrap width=80>Percent</th></tr><tr>
+<td class="wht cl"><a href="#611288042" >Assertions</a></td>
+<td class="wht cl rt">40</td>
+<td class="s10 cl rt">40</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt">37</td>
+<td class="s9 cl rt">92.50 </td>
+</tr><tr>
+<td class="wht cl"><a href="#301368417" >Cover properties</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><a href="#1396805540" >Cover sequences</a></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+<td class="wht cl rt">0</td>
+<td class="wht cl"></td>
+</tr><tr>
+<td class="wht cl"><b>Total</b></td>
+<td class="wht cl rt">40</td>
+<td class="s10 cl rt">40</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s9 cl rt">37</td>
+<td class="s9 cl rt">92.50 </td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<br clear=all>
+<a name="611288042"></a>
+<b>Assertion Details</b><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td>Attempts</td><td>Real Successes</td><td>Failures</td><td>Incomplete</td></tr><tr>
+<td class="wht cl"><a name="1198333242"></a>
+A10_FWDA_MEM_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">33</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1976306890"></a>
+A11_FWDB_EX_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">62</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1036459175"></a>
+A12_FWDB_MEM_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">23</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="937406200"></a>
+A13_NO_FWD_FROM_X0</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">96</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="175176051"></a>
+A14_LOAD_USE_STALL</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="435767498"></a>
+A15_JUMP_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="384464059"></a>
+A16_JALR_LSB</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="838753585"></a>
+A17_PC_PLUS4</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">330</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">3</td>
+</tr><tr>
+<td class="wht cl"><a name="11537048"></a>
+A18_PC_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">31</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1131599080"></a>
+A19_ECALL_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">3</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1936292073"></a>
+A1_RESET_PC</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">18</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="355605591"></a>
+A20_EBREAK_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1776421982"></a>
+A21_ILLEGAL_TRAP</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="913602375"></a>
+A22_TRAP_REDIRECT</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1312199555"></a>
+A23_TRAP_TARGET</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="120671031"></a>
+A24_MRET_TARGET</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="536779728"></a>
+A25_DMEM_NEEDS_VALID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1606888717"></a>
+A26_LW_ALIGNED</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">8</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1893614086"></a>
+A27_SW_STROBE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">12</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1044006823"></a>
+A28_NO_IMEM_DURING_DMEM</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1572821362"></a>
+A29_WB_X0_GUARD</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">294</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1634816889"></a>
+A2_RESET_VALID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="674211031"></a>
+A30_WB_PC4</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">4</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="10599641"></a>
+A31_CSR_WRITE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">26</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="57031147"></a>
+A32_TRAP_MEPC</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="790262398"></a>
+A33_TRAP_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">17</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="642608188"></a>
+A34_MRET_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">5</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1972425709"></a>
+A35_IRQ_MIE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">1</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="313841674"></a>
+A36_IRQ_SOURCE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="403662449"></a>
+A37_EXMEM_DMEM</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">30</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="869082919"></a>
+A38_PIPELINE_ADVANCE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s3 cl rt">0</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1529079694"></a>
+A39_NOP_NO_WRITE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">118</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1496586399"></a>
+A3_X0_IMMUTABLE</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">284</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">8</td>
+</tr><tr>
+<td class="wht cl"><a name="711850509"></a>
+A40_BRANCH_ALIGN</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">6</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="146187695"></a>
+A4_IFID_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="104085276"></a>
+A5_IDEX_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1987263979"></a>
+A6_EXMEM_RST</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">470</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="553865633"></a>
+A7_REDIRECT_FLUSH</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">31</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="907655877"></a>
+A8_IDEX_FROM_IFID</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">320</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr><tr>
+<td class="wht cl"><a name="1899160788"></a>
+A9_FWDA_EX_EX</td>
+<td class="s9 cl rt">1554</td>
+<td class="s9 cl rt">63</td>
+<td class="s9 cl rt">0</td>
+<td class="wht cl rt">0</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_20">
+    <li>
+      <a href="#inst_tag_20_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_20_Assert">Assert</a>    </li>
+  </ul>
+  <ul name="inst_tag_21">
+    <li>
+      <a href="#inst_tag_21_Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#inst_tag_21_Assert">Assert</a>    </li>
+  </ul>
+  <ul name="tag_rv32i_assertions_bind">
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Assert">Assert</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

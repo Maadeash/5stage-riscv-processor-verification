@@ -1,0 +1,92 @@
+<session version="1.1" release="X-2025.06-SP2-1" timestp="2026-08-04 12:06:04 GMT">
+  <info>
+    <attr name="datetime" value="Tue Aug  4 08:06:07 2026
+"/>
+    <attr name="command" value="urg -dir simv.vdb -report cov_report -format both"/>
+    <attr name="top_instance" value="Hazard_unit,Mux,Mux_3_by_1,Pipeline_top,tb_top,PC_Adder,uvm_custom_install_recording,uvm_custom_install_verdi_recording,PC_Module,uvm_pkg"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Assert" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="461/1316" />
+    <metric name="Cond" value="513/1161" />
+    <metric name="Toggle" value="4749/13468" />
+    <metric name="Branch" value="220/673" />
+    <metric name="Assert" value="38/83" />
+    <metric name="Group" value="100%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_alu_ctrl">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_wb_src">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_opcode">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_csr_ops">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_branch">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_rtype_funct3">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_control_flow">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_itype_funct3">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_load_width">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_forwarding">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_pipeline_valid">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_mem_alignment">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_trap_cause">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_store_width">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="rv32i_tb_pkg::rv32i_coverage::cg_reg_addresses">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+    <scorelist type="total" name="Design Hierarchy Assert">
+      <score name="Assert" value="38/83" />
+      <score name="Score" value="45.78" />
+    </scorelist>
+    <scorelist type="total" name="Module List Assert">
+      <score name="Assert" value="38/43" />
+      <score name="Score" value="88.37" />
+    </scorelist>
+    <scorelist type="total" name="Assertion">
+      <score name="Assert" value="38/83" />
+      <score name="Score" value="45.78" />
+    </scorelist>
+  </scope>
+  </old_coverage>
+</session>
