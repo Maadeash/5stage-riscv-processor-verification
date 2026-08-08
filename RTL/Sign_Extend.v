@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module Sign_Extend(
   input [31:0]In,
