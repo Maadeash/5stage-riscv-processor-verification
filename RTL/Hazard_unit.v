@@ -1,4 +1,3 @@
-
 module Hazard_unit(
   input MemReadE,
   input [4:0]RdE,
