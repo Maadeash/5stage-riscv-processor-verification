@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module ALU_Decoder(
   input [1:0]ALUOp,
