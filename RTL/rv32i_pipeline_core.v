@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module rv32i_pipeline_core(
   input clk,
