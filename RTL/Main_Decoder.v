@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module Main_Decoder(
   input [6:0]Op,
