@@ -1,4 +1,3 @@
-
 module Forwarding_Unit(
   input [4:0]Rs1E,
   input [4:0]Rs2E,
