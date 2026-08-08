@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module Control_Unit_Top(
   input [31:0]InstrD,
