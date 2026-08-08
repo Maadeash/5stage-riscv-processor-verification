@@ -1,4 +1,3 @@
-
 module Pipeline_top(
   input clk,
   input rst,
