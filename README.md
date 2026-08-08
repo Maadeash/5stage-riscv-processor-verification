@@ -314,9 +314,7 @@ python3 run_coverage.py
 
 ### Notes
 
-* `regression.py` writes per-test logs into `run/logs/`
 * `run_coverage.py` generates the shared coverage database and writes the HTML/text report into `run/cov_report/`
-* `tb_top.sv` contains a simulation timeout and VCD dump (`tb_top.vcd`)
 
 ---
 
