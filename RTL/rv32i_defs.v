@@ -1,4 +1,3 @@
-
 `ifndef RV32I_DEFS_V
 `define RV32I_DEFS_V
 `define OPC_LUI 7'b0110111
