@@ -285,8 +285,6 @@ The assertion set focuses on:
 
 ---
 
----
-
 ## Tools Used
 
 * Synopsys VCS
