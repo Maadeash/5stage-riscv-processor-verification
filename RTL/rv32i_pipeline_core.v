@@ -266,17 +266,6 @@ module rv32i_pipeline_core(
     ));
   always @(posedge clk or negedge rst) begin
     if(!rst) begin
-    $display("\n========== PIPE ==========");
-    $display("TIME=%0t",$time);
-    $display("PC          = %h",pc_f);
-    $display("IFID_VALID  = %b",ifid_valid);
-    $display("IFID_INSTR  = %h",ifid_instr);
-    $display("IDEX_PC     = %h",idex_pc);
-    $display("EXMEM_RD    = %0d",exmem_rd);
-    $display("MEMWB_RD    = %0d",memwb_rd);
-    $display("WB_DATA     = %h",memwb_wdata);
-    $display("redirect    = %b",redirect_now);
-    $display("flush       = %b",flush_pipeline);
       pc_f<=32'd0;
       ifid_valid<=1'b0; ifid_pc<=32'd0; ifid_pc4<=32'd0; ifid_instr<=32'd0;
       idex_valid<=1'b0; exmem_valid<=1'b0; memwb_valid<=1'b0;
