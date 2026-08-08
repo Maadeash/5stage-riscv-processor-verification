@@ -292,22 +292,23 @@ The assertion set focuses on:
 
 ---
 
-## How to Run Simulation and Regression
+## How to Run
 
-From the `run/` directory:
+### Setup Environment
 
-```bash
-# Compile
-vcs -full64 -sverilog -ntb_opts uvm-1.2 -debug_access+all \
-    -cm line+cond+tgl+fsm+branch+assert \
-    -cm_name rv32i_cov -cm_dir simv.vdb \
-    -f filelist.f -l compile.log
+```
+source /path/to/synopsys_setup.sh 
+```
 
-# Run one test
-./simv +UVM_NO_RELNOTES +UVM_TESTNAME=rv32i_smoke_test
+### Compile
 
+```
+vcs -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -f filelist.f -l compile.log
+```
 
-# Run the coverage-oriented flow
+### Simulate
+
+```
 python3 run_coverage.py
 ```
 
