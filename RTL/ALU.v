@@ -1,4 +1,3 @@
-
 `include "rv32i_defs.v"
 module ALU(
   input [31:0]A,
