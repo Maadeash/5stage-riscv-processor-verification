@@ -1,6 +1,6 @@
-# RV32I 5-Stage Pipelined Processor — UVM Verification
+# RV32I 5-Stage Pipelined Processor — Design and UVM Verification
 
-A SystemVerilog/UVM verification environment for a 5-stage pipelined RV32I RISC-V core, with directed tests, functional coverage, assertion-based checking, and Synopsys VCS/URG coverage reports.
+Designed a 5-Stage Pipelined RISC-V Processor using Verilog HDL and built a SystemVerilog/UVM verification environment for it, with directed tests, functional coverage, assertion-based checking, and Synopsys VCS/URG coverage reports.
 
 `RTL` — synthesizable core &nbsp;|&nbsp; `UVM_VIP` — testbench &nbsp;|&nbsp; `run` — regression, coverage flow, reports
 
@@ -46,6 +46,7 @@ The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapp
 | `CSR_File.v` | Machine-mode CSRs, trap state, timer-interrupt pending |
 | `PC_Module.v`, `PC_Adder.v`, `Mux.v` | PC sequencing / combinational helpers |
 
+
 <img width="1774" height="887" alt="RISC-V pipeline architecture" src="https://github.com/user-attachments/assets/99e98f70-c87a-4ef0-8992-63c895de418a" />
 
 ---
@@ -54,6 +55,7 @@ The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapp
 ## Verification Environment
 
 Standard UVM agent/env structure under `UVM_VIP/`:
+
 
 <img width="1625" height="968" alt="UVM testbench architecture" src="https://github.com/user-attachments/assets/a963e750-5a23-43f7-af7e-21def8c5963a" />
 
