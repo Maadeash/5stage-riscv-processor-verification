@@ -18,6 +18,7 @@ A SystemVerilog/UVM verification environment for a 5-stage pipelined RV32I RISC-
 
 ---
 
+
 ## Architecture
 
 The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapped by `Pipeline_top.v`:
@@ -49,6 +50,7 @@ The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapp
 
 ---
 
+
 ## Verification Environment
 
 Standard UVM agent/env structure under `UVM_VIP/`:
@@ -74,6 +76,7 @@ Standard UVM agent/env structure under `UVM_VIP/`:
 **Functional coverage — 15 covergroups:** `cg_opcode`, `cg_alu_ctrl`, `cg_branch`, `cg_forwarding`, `cg_wb_src`, `cg_trap_cause`, `cg_load_width`, `cg_store_width`, `cg_mem_alignment`, `cg_reg_addresses`, `cg_csr_ops`, `cg_rtype_funct3`, `cg_itype_funct3`, `cg_control_flow`, `cg_pipeline_valid`.
 
 ---
+
 
 ## Test Plan
 
@@ -103,6 +106,7 @@ Each test in `rv32i_test_lib.sv` (extends `rv32i_base_test`) pairs with a drivin
 `run/cov_report/tests.txt` is the source of truth for which tests fed a given coverage report.
 
 ---
+
 
 ## Results
 
@@ -148,6 +152,7 @@ Assertion set covers: reset behavior and `x0` immutability, IF/ID·ID/EX·EX/MEM
 
 ---
 
+
 ## How to Run
 
 Tools: **Synopsys VCS** + **Python 3**.
@@ -172,6 +177,7 @@ vcs -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -f filelist.f -l comp
 
 ---
 
+
 ## Repository Layout
 
 ```text
@@ -188,62 +194,12 @@ vcs -full64 -sverilog -ntb_opts uvm -debug_access+all -kdb -f filelist.f -l comp
 
 ---
 
+
 ## Known Gaps / Future Work
 
 - Code coverage (line/cond/toggle/branch) is well below closure; functional coverage is closed but structural coverage needs more directed and random stimulus.
 - `run/regression_report.txt` reflects 13 tests; the coverage flow (`run_coverage.py`) runs 15 (adds `memcover` and `covclose`) — worth reconciling into a single entry point.
 - 45 of 83 assertions are still uncovered (never triggered) and 2 are incomplete — additional corner-case and negative stimulus would close these out.
 
-
-
-
-
-### Architecture diagram of RISC-V
-
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/99e98f70-c87a-4ef0-8992-63c895de418a" />
-
-
-## Verification Architecture
-
-The verification environment is packaged in `UVM_VIP/` and uses the following structure:
-
-<img width="1625" height="968" alt="image" src="https://github.com/user-attachments/assets/a963e750-5a23-43f7-af7e-21def8c5963a" />
-
-
-
-### Verification output
-
-<img width="1675" height="906" alt="image" src="https://github.com/user-attachments/assets/01a60efe-111a-4a95-9413-58a2ad61a95c" />
-
-
----
-
-### Test summary 
-
-<img width="1555" height="797" alt="image" src="https://github.com/user-attachments/assets/b7758ca8-559e-4c3f-a5bc-3f25e67dbe83" />
-
-
-This is useful as a visual summary of the test matrix, but `run/cov_report/tests.txt` is often better kept as text because it lists the exact tests used to build the report.
-
----
-
-
-
-### Regression test output
-
-<img width="975" height="529" alt="image" src="https://github.com/user-attachments/assets/1a884ca1-4b87-4725-8645-242e2c68ebd0" />
-
-
----
-
-## Functional Coverage Summary
-
-<img width="1074" height="152" alt="image" src="https://github.com/user-attachments/assets/14cef1c7-cf28-4168-befa-7b01302ff9a2" />
-
-
-
-## Assertions Summary
-
-<img width="640" height="759" alt="image" src="https://github.com/user-attachments/assets/6b195841-8b6e-4995-9fce-3c91d8dda920" />
 
 
