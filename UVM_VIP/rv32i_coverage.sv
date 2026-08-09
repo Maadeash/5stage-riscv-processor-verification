@@ -215,18 +215,18 @@ class rv32i_coverage extends uvm_subscriber #(rv32i_obs_item);
   function void report_phase(uvm_phase phase);
     super.report_phase(phase);
     `uvm_info("COV","COVERAGE SUMMARY:",UVM_NONE)
-    `uvm_info("COV",$sformatf("Opcode        : %0.1f%%",cg_opcode.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("ALU Control   : %0.1f%%",cg_alu_ctrl.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("Branch×Taken  : %0.1f%%",cg_branch.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("Forwarding    : %0.1f%%",cg_forwarding.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("WB Source     : %0.1f%%",cg_wb_src.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("Trap Cause    : %0.1f%%",cg_trap_cause.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("Load Width    : %0.1f%%",cg_load_width.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("Store Width   : %0.1f%%",cg_store_width.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Opcode : %0.1f%%",cg_opcode.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("ALU Control : %0.1f%%",cg_alu_ctrl.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Branch×Taken : %0.1f%%",cg_branch.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Forwarding : %0.1f%%",cg_forwarding.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("WB Source : %0.1f%%",cg_wb_src.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Trap Cause : %0.1f%%",cg_trap_cause.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Load Width : %0.1f%%",cg_load_width.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("Store Width : %0.1f%%",cg_store_width.get_coverage()),UVM_NONE)
     `uvm_info("COV",$sformatf("Mem Alignment : %0.1f%%",cg_mem_alignment.get_coverage()),UVM_NONE)
     `uvm_info("COV",$sformatf("Reg Addresses : %0.1f%%",cg_reg_addresses.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("R-type f3     : %0.1f%%",cg_rtype_funct3.get_coverage()),UVM_NONE)
-    `uvm_info("COV",$sformatf("I-type f3     : %0.1f%%",cg_itype_funct3.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("R-type f3 : %0.1f%%",cg_rtype_funct3.get_coverage()),UVM_NONE)
+    `uvm_info("COV",$sformatf("I-type f3 : %0.1f%%",cg_itype_funct3.get_coverage()),UVM_NONE)
     `uvm_info("COV",$sformatf("Control Flow  : %0.1f%%",cg_control_flow.get_coverage()),UVM_NONE)
   endfunction
 endclass:rv32i_coverage
