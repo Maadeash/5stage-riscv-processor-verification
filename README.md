@@ -35,22 +35,15 @@ The repository also contains `Pipeline_top.v` as a wrapper around the core and a
 
 ### Architecture diagram of RISC-V
 
-<img width="1825" height="862" alt="image" src="https://github.com/user-attachments/assets/d9c9b375-8291-467a-a27c-986ab619778a" />
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/99e98f70-c87a-4ef0-8992-63c895de418a" />
 
-
-
-
-### Block diagram
-
-<img width="1627" height="967" alt="image" src="https://github.com/user-attachments/assets/e39092b0-fe76-4372-8994-9871f02bef57" />
-
-
-
----
 
 ## Verification Architecture
 
 The verification environment is packaged in `UVM_VIP/` and uses the following structure:
+
+<img width="1625" height="968" alt="image" src="https://github.com/user-attachments/assets/a963e750-5a23-43f7-af7e-21def8c5963a" />
+
 
 * `rv32i_pkg.sv` holds shared RV32I constants such as opcodes, ALU controls, writeback selects, CSR command encodings, trap causes, and CSR addresses.
 * `rv32i_tb_pkg.sv` imports the verification components and includes the sequence, test, scoreboard, coverage, agent, and env files.
