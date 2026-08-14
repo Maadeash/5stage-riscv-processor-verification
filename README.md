@@ -60,9 +60,6 @@ The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapp
 
 Standard UVM agent/env structure under `UVM_VIP/`:
 
-
-<img width="1625" height="968" alt="UVM testbench architecture" src="https://github.com/user-attachments/assets/a963e750-5a23-43f7-af7e-21def8c5963a" />
-
 | Component | File | Role |
 |---|---|---|
 | Package | `rv32i_pkg.sv` | Opcodes, ALU controls, writeback selects, CSR encodings, trap causes |
@@ -80,6 +77,11 @@ Standard UVM agent/env structure under `UVM_VIP/`:
 **Monitor observation item** carries: writeback state, memory transactions, trap detection/cause, forwarding selects, branch-redirect activity, CSR writes.
 
 **Functional coverage — 15 covergroups:** `cg_opcode`, `cg_alu_ctrl`, `cg_branch`, `cg_forwarding`, `cg_wb_src`, `cg_trap_cause`, `cg_load_width`, `cg_store_width`, `cg_mem_alignment`, `cg_reg_addresses`, `cg_csr_ops`, `cg_rtype_funct3`, `cg_itype_funct3`, `cg_control_flow`, `cg_pipeline_valid`.
+
+## Block Diagram:
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/6989e992-d11e-4250-88bc-a9320ffbf5ee" />
+
 
 ---
 
