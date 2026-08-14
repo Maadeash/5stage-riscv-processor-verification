@@ -124,7 +124,8 @@ Each test in `rv32i_test_lib.sv` (extends `rv32i_base_test`) pairs with a drivin
 |---|---|---|---|
 | 13 | 13 | 0 | **100.00%** |
 
-<img width="975" height="529" alt="Regression output" src="https://github.com/user-attachments/assets/1a884ca1-4b87-4725-8645-242e2c68ebd0" />
+<img width="1703" height="924" alt="image" src="https://github.com/user-attachments/assets/08d4fab9-7c8e-4bcf-959e-d43d0e9213e4" />
+
 
 ### Functional / code coverage — `run/cov_report/`
 
