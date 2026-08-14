@@ -190,9 +190,9 @@ class rv32i_reset_seq extends rv32i_base_seq;
   `uvm_object_utils(rv32i_reset_seq)
   function new(string name="rv32i_reset_seq"); super.new(name); endfunction
   task body();
-    `uvm_info(get_name(),"=== Reset Sequence START ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Reset Sequence START",UVM_MEDIUM)
     do_reset(8);
-    `uvm_info(get_name(),"=== Reset Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Reset Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_reset_seq
 
@@ -214,7 +214,7 @@ class rv32i_smoke_seq extends rv32i_base_seq;
     `NOP,
     `NOP
   };
-    `uvm_info(get_name(),"=== Smoke Sequence START ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Smoke Sequence START",UVM_MEDIUM)
     do_reset(5);
     if(env_h!=null) begin
       env_h.expect_wb(5'd1,32'd5,32'd0,"ADDI x1=5");
@@ -225,7 +225,7 @@ class rv32i_smoke_seq extends rv32i_base_seq;
     end
     load_program(prog,prog.size());
     wait_drain(20);
-    `uvm_info(get_name(),"=== Smoke Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Smoke Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_smoke_seq
 
@@ -249,7 +249,7 @@ class rv32i_alu_r_seq extends rv32i_base_seq;
       `SLTU(5'd11,5'd2,5'd1),
       `NOP,`NOP,`NOP
     };
-    `uvm_info(get_name(),"=== ALU R-type Sequence START ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"ALU R-type Sequence START",UVM_MEDIUM)
     do_reset(5);
     if(env_h!=null) begin
       env_h.expect_wb(5'd1,32'd10,32'd0,"ADDI x1=10");
@@ -267,7 +267,7 @@ class rv32i_alu_r_seq extends rv32i_base_seq;
     end
     load_program(prog,prog.size());
     wait_drain(30);
-    `uvm_info(get_name(),"=== ALU R-type Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"ALU R-type Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_alu_r_seq
 
@@ -290,7 +290,7 @@ class rv32i_alu_i_seq extends rv32i_base_seq;
       `NOP,`NOP,`NOP
     };
 
-    `uvm_info(get_name(),"=== ALU I-type Sequence START ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"ALU I-type Sequence START",UVM_MEDIUM)
     do_reset(5);
     if(env_h!=null) begin
       env_h.expect_wb(5'd1,32'd100,32'd0,"ADDI");
@@ -305,7 +305,7 @@ class rv32i_alu_i_seq extends rv32i_base_seq;
     end
     load_program(prog,prog.size());
     wait_drain(25);
-    `uvm_info(get_name(),"=== ALU I-type Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"ALU I-type Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_alu_i_seq
 
@@ -720,7 +720,7 @@ class rv32i_random_seq extends rv32i_base_seq;
   function new(string name="rv32i_random_seq"); super.new(name); endfunction
   task body();
     rv32i_seq_item item;
-    `uvm_info(get_name(),$sformatf("=== Random Sequence START (%0d instrs) ===",num_instrs),UVM_MEDIUM)
+    `uvm_info(get_name(),$sformatf("Random Sequence START (%0d instrs)",num_instrs),UVM_MEDIUM)
     do_reset(5);
     for(int i=0; i<num_instrs; i++) begin
       item=rv32i_seq_item::type_id::create($sformatf("rand_item_%0d",i));
@@ -743,7 +743,7 @@ class rv32i_random_seq extends rv32i_base_seq;
       finish_item(item);
     end
     wait_drain(30);
-    `uvm_info(get_name(),"=== Random Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Random Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_random_seq
 
@@ -828,11 +828,11 @@ class rv32i_covclose_seq extends rv32i_base_seq;
       `JAL(5'd0,21'd2),
       `NOP
     };
-    `uvm_info(get_name(),"=== Coverage Closure Sequence START ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Coverage Closure Sequence START",UVM_MEDIUM)
     do_reset(5);
     load_program(prog,prog.size());
     wait_drain(250);
-    `uvm_info(get_name(),"=== Coverage Closure Sequence DONE ===",UVM_MEDIUM)
+    `uvm_info(get_name(),"Coverage Closure Sequence DONE",UVM_MEDIUM)
   endtask
 endclass:rv32i_covclose_seq
 `endif
