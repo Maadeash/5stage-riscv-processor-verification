@@ -1,4 +1,4 @@
-# RV32I 5-Stage Pipelined Processor — Design and UVM Verification
+# RV32I 5-Stage Pipelined Processor — RTL Design and UVM Verification
 
 Designed a 5-Stage Pipelined RISC-V Processor using Verilog HDL and built a SystemVerilog/UVM verification environment for it, with directed tests, functional coverage, assertion-based checking, and Synopsys VCS/URG coverage reports.
 
