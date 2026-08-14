@@ -92,9 +92,9 @@ module rv32i_pipeline_core(
   wire [31:0]alu_res;
   ALU UALU(.A(alu_a),.B(alu_b),.ALUControl(idex_aluctrl),.Result(alu_res),.Zero(alu_zero),.Negative(alu_neg),.Carry(alu_carry),.Overflow(alu_ovf));
   wire ex_misaligned_load;
-  assign ex_misaligned_load=idex_valid&&idex_memread&&((idex_funct3==3'b001||idex_funct3==3'b101)?alu_res[0]:(idex_funct3==3'b010?|alu_res[1:0]:1'b0));
+  assign ex_misaligned_load=idex_valid && idex_memread && ((idex_funct3 == 3'b001 || idex_funct3 == 3'b101) ? alu_res[0] : (idex_funct3 == 3'b010 ?|alu_res[1:0] :1'b0));
   wire ex_misaligned_store;
-  assign ex_misaligned_store=idex_valid&&idex_memwrite&&((idex_funct3==3'b001)?alu_res[0]:(idex_funct3==3'b010?|alu_res[1:0]:1'b0));
+  assign ex_misaligned_store = idex_valid && idex_memwrite && ((idex_funct3 == 3'b001) ? alu_res[0] : (idex_funct3 == 3'b010 ? |alu_res[1:0] : 1'b0));
   assign ex_interrupt=idex_valid&&irq_pending;
   assign ex_trap=idex_valid&&(idex_ecall||idex_ebreak||idex_illegal||control_misaligned||ex_misaligned_load||ex_misaligned_store||ex_interrupt);
   assign trap_cause=ex_interrupt?`CAUSE_MTI :
