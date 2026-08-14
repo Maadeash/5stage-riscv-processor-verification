@@ -21,7 +21,7 @@ Designed a 5-Stage Pipelined RISC-V Processor using Verilog HDL and built a Syst
 
 ## Architecture
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ca560969-f6a5-4f00-80bd-83377aa54f0e" />
+<img width="1634" height="963" alt="image" src="https://github.com/user-attachments/assets/31ee13c8-5e4d-47d0-851c-d7f79cb0d9a3" />
 
 
 The DUT (`RTL/rv32i_pipeline_core.v`) is a classic 5-stage RV32I pipeline, wrapped by `Pipeline_top.v`:
